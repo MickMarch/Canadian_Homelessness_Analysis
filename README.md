@@ -1,5 +1,5 @@
 # Weather Impact on Crime Rates
-An analysis of Crime Rates in the Greater Toronto area with regard to the impact weather has on crime rates.
+An analysis of Crime Rates in the Greater Toronto Area with regard to the impact weather has on crime rates.
 
 
 # Project Question
@@ -9,10 +9,10 @@ Can changes in weather affect crime rates?
 Data has been sourced from the Toronto Police Service Data Catalogue. 
 https://data.torontopolice.on.ca/pages/catalogue
 
-Raw data csv files can be found in the Resources folder with the GitHub repository.  The exception is the Major Crimes CSV (over 100 M)
+Raw data csv files can be found in the datasets folder within the GitHub repository.  The exception is the Major Crimes CSV (over 100 M).  Download the file here : https://data.torontopolice.on.ca/datasets/TorontoPS::major-crime-indicators-open-data/about
 
 # Project Roles and Activities
-* Focus area
+* Focus areas:
     * Data cleaning - Michal 
     * Data base PostgreSQL - Susan 
     * Visualization - Nitasha
