@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Cache / misc
+Private_Susan/
+
 # Distribution / packaging
 .Python
 build/
