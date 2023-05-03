@@ -23,3 +23,9 @@ Traffic Collisions			553781
 
 There is this overview file. It may be helpful as a reference but does not include dates.
 Neighbourhood Crime Rates		   159
+
+# CSV Weather:				Rows:
+Daily					90001
+
+
+URL: https://toronto.weatherstats.ca/download.html
