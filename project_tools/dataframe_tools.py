@@ -143,17 +143,18 @@ class TorontoCrimeDataCleaner:
             print(f"Error in _filter_by_year(): {err}")
             print("--------------------------")
     
-    def _create_datetime_column(self, df: pd.DataFrame) -> pd.DataFrame:
+    def _create_timestamp(self, df: pd.DataFrame) -> pd.DataFrame:
         """Internal method to create pd.to_datetime() object out of the different date columns"""
 
-        print("Creating 'OCC_DATETIME' column out of date columns...")
+        print("Creating 'OCC_TIMESTAMP' column out of date columns...")
         try:
-            df['OCC_DATETIME'] = df['OCC_MONTH'] + " " + df['OCC_DAY'].astype(str) + " " + df['OCC_YEAR'].astype(str) + " " + df['OCC_HOUR'].astype(str) + ":00:00"
-            df['OCC_DATETIME'] = pd.to_datetime(df['OCC_DATETIME'])
+            df['OCC_TIMESTAMP'] = df['OCC_MONTH'] + " " + df['OCC_DAY'].astype(str) + " " + df['OCC_YEAR'].astype(str) + " " + df['OCC_HOUR'].astype(str) + ":00:00 EST" 
+            df['OCC_TIMESTAMP'] = pd.to_datetime(df['OCC_TIMESTAMP'], format='%B %d %Y %H:%M:%S %Z')
+            df['OCC_TIMESTAMP'] = df['OCC_TIMESTAMP'].dt.strftime("%Y-%m-%d %H:%M:%S%z")
             return df
         except Exception as err:
             print("**** FAILED CLEANING SEQUENCE ****")
-            print(f"Error in _create_datetime_column(): {err}")
+            print(f"Error in _create_timestamp(): {err}")
             print("--------------------------")
 
     def _clean_dataframe(self, df: pd.DataFrame) -> pd.DataFrame:
@@ -167,7 +168,7 @@ class TorontoCrimeDataCleaner:
         df = self._dates_to_int(df)
         df = self._remove_whitespace(df)
         df = self._filter_by_year(df)
-        df = self._create_datetime_column(df)
+        df = self._create_timestamp(df)
 
         print("Successfully cleaned data!")
         return df
