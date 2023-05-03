@@ -1,7 +1,6 @@
 # Weather Impact on Crime Rates
 An analysis of Crime Rates in the Greater Toronto Area with regard to the impact weather has on crime rates.
 
-
 ## Project Overview
 
 ### Purpose

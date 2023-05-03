@@ -11,7 +11,8 @@ __pycache__/
 # C extensions
 *.so
 
-# Cache / Misc
+# Cache / misc
+Private_Susan/
 .DS_Store
 
 # Distribution / packaging
