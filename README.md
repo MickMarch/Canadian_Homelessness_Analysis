@@ -31,7 +31,8 @@ The crime data columns glossary:
 * Focus areas:
     * Data cleaning - Michael 
     * Data base PostgreSQL - Susan 
-    * Visualization - Nitasha
+    * Visualization and data exploration - Nitasha
+  
 
 ## Deliverables
 
