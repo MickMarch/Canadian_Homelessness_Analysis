@@ -1,17 +1,46 @@
-# Canadian_Homelessness_Analysis
-An analysis of homelessness in Canada
+# Weather Impact on Crime Rates
+An analysis of Crime Rates in the Greater Toronto Area with regard to the impact weather has on crime rates.
+
+## Project Overview
+
+### Purpose
+The purpose of this project is to analyze data to answer the following question:
+***Can changes in weather affect crime rates?***
+
+### Technologies
+
+- Python
+- Jupyter Notebooks
+- Machine Learning
+- Database (PostgreSQL)
+- Tableau
+
+### Data Set
+Data has been sourced from the Toronto Police Service Data Catalogue. 
+https://data.torontopolice.on.ca/pages/catalogue
 
 
-# Project Question
-Can changes in social and financial factors predict increases in homelessness?
+Raw data csv files can be found in the datasets folder within the GitHub repository.  The exception is the Major Crimes CSV (over 100 M).  Download the file here : https://data.torontopolice.on.ca/datasets/TorontoPS::major-crime-indicators-open-data/about
 
-# Data Set
-## Suggested data sources
-* https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4610006701&pickMembers%5B0%5D=3.1&cubeTimeFrame.startYear=2018&cubeTimeFrame.endYear=2021&referencePeriods=20180101%2C20210101
+The crime data columns glossary:
+![crime_glossary_01](./img/toronto_crime_glossary_01.png)
+![crime_glossary_02](./img/toronto_crime_glossary_02.png)
 
-* https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410035301
+### Project Roles and Activities
+* Focus areas:
+    * Data cleaning - Michael 
+    * Data base PostgreSQL - Susan 
+    * Visualization and data exploration - Nitasha
+  
 
-* https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4610006701
+## Deliverables
 
-* https://www150.statcan.gc.ca/n1/en/catalogue/46250001
+### Segment 1 Deliverables
+* Presentation      - ??
+* GitHub            - complete
+* Machine Learning  - 
+* Database          -
+* Dashboard         - 
+
+
 
