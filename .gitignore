@@ -1,6 +1,4 @@
 # Branch work, delete before merge
-datasets/
-cleaned_data/
 .vscode/
 
 # Byte-compiled / optimized / DLL files
@@ -11,7 +9,8 @@ __pycache__/
 # C extensions
 *.so
 
-# Cache / Misc
+# Cache / misc
+Private_Susan/
 .DS_Store
 
 # Distribution / packaging

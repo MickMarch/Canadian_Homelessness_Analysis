@@ -1,7 +1,6 @@
 # Weather Impact on Crime Rates
 An analysis of Crime Rates in the Greater Toronto Area with regard to the impact weather has on crime rates.
 
-
 ## Project Overview
 
 ### Purpose
@@ -13,7 +12,8 @@ The purpose of this project is to analyze data to answer the following question:
 - Python
 - Jupyter Notebooks
 - Machine Learning
-- Database
+- Database (PostgreSQL)
+- Tableau
 
 ### Data Set
 Data has been sourced from the Toronto Police Service Data Catalogue. 
@@ -28,9 +28,10 @@ The crime data columns glossary:
 
 ### Project Roles and Activities
 * Focus areas:
-    * Data cleaning - Michal 
+    * Data cleaning - Michael 
     * Data base PostgreSQL - Susan 
-    * Visualization - Nitasha
+    * Visualization and data exploration - Nitasha
+  
 
 ## Deliverables
 
