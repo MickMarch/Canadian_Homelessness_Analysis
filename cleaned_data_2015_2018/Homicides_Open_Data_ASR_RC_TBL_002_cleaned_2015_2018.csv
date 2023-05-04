@@ -1,11 +1,10 @@
-EVENT_UNIQUE_ID,CRIME,OCC_YEAR,OCC_MONTH,OCC_DAY,OCC_DOW,OCC_HOUR,PREMISES_TYPE,HOOD_140,NEIGHBOURHOOD_140,LONG_WGS84,LAT_WGS84,OCC_DATETIME
+EVENT_UNIQUE_ID,CRIME,OCC_YEAR,OCC_MONTH,OCC_DAY,OCC_DOW,OCC_HOUR,PREMISES_TYPE,HOOD_140,NEIGHBOURHOOD_140,LONG_WGS84,LAT_WGS84,date
 GO-201555992,homicide,2015,January,10,Saturday,0,N/A,75,Church-Yonge Corridor (75),-79.37671331,43.66241268,2015-01-10
 GO-201594334,homicide,2015,January,16,Friday,0,N/A,1,West Humber-Clairville (1),-79.59622148,43.74143135,2015-01-16
 GO-201599853,homicide,2015,January,17,Saturday,0,N/A,50,Newtonbrook East (50),-79.4126711,43.78133031,2015-01-17
 GO-2015159448,homicide,2015,January,27,Tuesday,0,N/A,31,Yorkdale-Glen Park (31),-79.44926911,43.7205075,2015-01-27
 GO-2015179790,homicide,2015,January,31,Saturday,0,N/A,78,Kensington-Chinatown (78),-79.40545063,43.65088291,2015-01-31
 GO-2015205271,homicide,2015,February,4,Wednesday,0,N/A,120,Clairlea-Birchmount (120),-79.26220606,43.71254894,2015-02-04
-GO-2015346652,homicide,2015,February,28,Saturday,0,N/A,64,Woodbine Corridor (64),-79.32088796,43.68393823,2015-02-28
 GO-2015346652,homicide,2015,February,28,Saturday,0,N/A,64,Woodbine Corridor (64),-79.32088796,43.68393823,2015-02-28
 GO-2015453427,homicide,2015,March,17,Tuesday,0,N/A,6,Kingsview Village-The Westway (6),-79.54867241,43.7013181,2015-03-17
 GO-2015457868,homicide,2015,March,18,Wednesday,0,N/A,17,Mimico (includes Humber Bay Shores) (17),-79.48326397,43.6205055,2015-03-18
@@ -24,12 +23,10 @@ GO-2015916307,homicide,2015,June,1,Monday,0,N/A,137,Woburn (137),-79.2352639,43.
 GO-2015926649,homicide,2015,June,3,Wednesday,0,N/A,75,Church-Yonge Corridor (75),-79.37775539,43.6519573,2015-06-03
 GO-2015988808,homicide,2015,June,12,Friday,0,N/A,111,Rockcliffe-Smythe (111),-79.49415781,43.67258053,2015-06-12
 GO-20151086599,homicide,2015,June,28,Sunday,0,N/A,84,Little Portugal (84),-79.42285012,43.64123192,2015-06-28
-GO-20151086599,homicide,2015,June,28,Sunday,0,N/A,84,Little Portugal (84),-79.42285012,43.64123192,2015-06-28
 GO-20151158745,homicide,2015,July,9,Thursday,0,N/A,2,Mount Olive-Silverstone-Jamestown (2),-79.58380099,43.73447858,2015-07-09
 GO-20151178239,homicide,2015,July,10,Friday,0,N/A,93,Dovercourt-Wallace Emerson-Junction (93),-79.44851171,43.66858493,2015-07-10
 GO-20151182401,homicide,2015,July,12,Sunday,0,N/A,123,Cliffcrest (123),-79.22679067,43.73001674,2015-07-12
 GO-20151325557,homicide,2015,August,3,Monday,0,N/A,74,North St.James Town (74),-79.37206804,43.67070052,2015-08-03
-GO-20151330701,homicide,2015,August,4,Tuesday,0,N/A,82,Niagara (82),-79.42262288,43.6327429,2015-08-04
 GO-20151330701,homicide,2015,August,4,Tuesday,0,N/A,82,Niagara (82),-79.42262288,43.6327429,2015-08-04
 GO-20151352151,homicide,2015,August,7,Friday,0,N/A,91,Weston-Pellam Park (91),-79.46369835,43.67587414,2015-08-07
 GO-20151362027,homicide,2015,August,9,Sunday,0,N/A,76,Bay Street Corridor (76),-79.38163118,43.65442112,2015-08-09
@@ -53,7 +50,6 @@ GO-20152050482,homicide,2015,November,30,Monday,0,N/A,3,Thistletown-Beaumond Hei
 GO-20152123843,homicide,2015,December,11,Friday,0,N/A,77,Waterfront Communities-The Island (77),-79.39331907,43.64672612,2015-12-11
 GO-20152125474,homicide,2015,December,11,Friday,0,N/A,53,Henry Farm (53),-79.33990974,43.77605294,2015-12-11
 GO-20152123328,homicide,2015,December,11,Friday,0,N/A,76,Bay Street Corridor (76),-79.3805775,43.64641459,2015-12-11
-GO-2018104863,homicide,2015,December,14,Monday,0,N/A,55,Thorncliffe Park (55),-79.34138354,43.70801163,2015-12-14
 GO-20152151120,homicide,2015,December,15,Tuesday,0,N/A,75,Church-Yonge Corridor (75),-79.38157518,43.66008029,2015-12-15
 GO-20152149617,homicide,2015,December,15,Tuesday,0,N/A,21,Humber Summit (21),-79.57207364,43.7559688,2015-12-15
 GO-20152180756,homicide,2015,December,20,Sunday,0,N/A,106,Humewood-Cedarvale (106),-79.42086651,43.68618824,2015-12-20
@@ -67,11 +63,7 @@ GO-2016139786,homicide,2016,January,24,Sunday,0,N/A,127,Bendale (127),-79.253649
 GO-2016173014,homicide,2016,January,29,Friday,0,N/A,31,Yorkdale-Glen Park (31),-79.46580817,43.70823101,2016-01-29
 GO-2016175803,homicide,2016,January,30,Saturday,0,N/A,2,Mount Olive-Silverstone-Jamestown (2),-79.58174802,43.73777365,2016-01-30
 GO-2016181573,homicide,2016,January,31,Sunday,0,N/A,78,Kensington-Chinatown (78),-79.39922772,43.65584521,2016-01-31
-GO-2016181573,homicide,2016,January,31,Sunday,0,N/A,78,Kensington-Chinatown (78),-79.39922772,43.65584521,2016-01-31
 GO-2016204501,homicide,2016,February,3,Wednesday,0,N/A,13,Etobicoke West Mall (13),-79.56971993,43.65158597,2016-02-03
-GO-2016215657,homicide,2016,February,5,Friday,0,N/A,132,Malvern (132),-79.21865095,43.80653086,2016-02-05
-GO-2016215657,homicide,2016,February,5,Friday,0,N/A,132,Malvern (132),-79.21865095,43.80653086,2016-02-05
-GO-2016215657,homicide,2016,February,5,Friday,0,N/A,132,Malvern (132),-79.21865095,43.80653086,2016-02-05
 GO-2016215657,homicide,2016,February,5,Friday,0,N/A,132,Malvern (132),-79.21865095,43.80653086,2016-02-05
 GO-2016225259,homicide,2016,February,7,Sunday,0,N/A,43,Victoria Village (43),-79.30493587,43.71598062,2016-02-07
 GO-2016235777,homicide,2016,February,9,Tuesday,0,N/A,28,Rustic (28),-79.50383466,43.70287184,2016-02-09
@@ -90,15 +82,11 @@ GO-2016632371,homicide,2016,April,14,Thursday,0,N/A,17,Mimico (includes Humber B
 GO-2016652097,homicide,2016,April,17,Sunday,0,N/A,66,Danforth (66),-79.32476486,43.68311087,2016-04-17
 GO-2016656231,homicide,2016,April,17,Sunday,0,N/A,113,Weston (113),-79.52940286,43.70513523,2016-04-17
 GO-2016666749,homicide,2016,April,19,Tuesday,0,N/A,68,North Riverdale (68),-79.35290747,43.66615451,2016-04-19
-GO-2018104863,homicide,2016,April,22,Friday,0,N/A,55,Thorncliffe Park (55),-79.34138354,43.70801163,2016-04-22
 GO-2016734521,homicide,2016,April,29,Friday,0,N/A,119,Wexford/Maryvale (119),-79.31292493,43.75840854,2016-04-29
-GO-2016734521,homicide,2016,April,29,Friday,0,N/A,119,Wexford/Maryvale (119),-79.31292493,43.75840854,2016-04-29
-GO-2016838159,homicide,2016,May,15,Sunday,0,N/A,2,Mount Olive-Silverstone-Jamestown (2),-79.58941948,43.73201658,2016-05-15
 GO-2016838159,homicide,2016,May,15,Sunday,0,N/A,2,Mount Olive-Silverstone-Jamestown (2),-79.58941948,43.73201658,2016-05-15
 GO-2016851941,homicide,2016,May,18,Wednesday,0,N/A,75,Church-Yonge Corridor (75),-79.38234267,43.66680298,2016-05-18
 GO-2016965196,homicide,2016,June,3,Friday,0,N/A,22,Humbermede (22),-79.5403342,43.74271952,2016-06-03
 GO-2016989870,homicide,2016,June,7,Tuesday,0,N/A,104,Mount Pleasant West (104),-79.39663505,43.70655007,2016-06-07
-GO-20161148938,homicide,2016,July,1,Friday,0,N/A,78,Kensington-Chinatown (78),-79.4038075,43.65725556,2016-07-01
 GO-20161148938,homicide,2016,July,1,Friday,0,N/A,78,Kensington-Chinatown (78),-79.4038075,43.65725556,2016-07-01
 GO-20161116247,homicide,2016,July,3,Sunday,0,N/A,84,Little Portugal (84),-79.43767134,43.64963962,2016-07-03
 GO-20161229465,homicide,2016,July,13,Wednesday,0,N/A,25,Glenfield-Jane Heights (25),-79.52013064,43.73780052,2016-07-13
@@ -108,8 +96,6 @@ GO-20161335085,homicide,2016,July,29,Friday,0,N/A,75,Church-Yonge Corridor (75),
 GO-20161403032,homicide,2016,August,9,Tuesday,0,N/A,69,Blake-Jones (69),-79.33443371,43.67726343,2016-08-09
 GO-20161443064,homicide,2016,August,15,Monday,0,N/A,73,Moss Park (73),-79.37345495,43.65729769,2016-08-15
 GO-20161480338,homicide,2016,August,21,Sunday,0,N/A,82,Niagara (82),-79.41270633,43.64190559,2016-08-21
-GO-20161506128,homicide,2016,August,25,Thursday,0,N/A,139,Scarborough Village (139),-79.22282061,43.73957577,2016-08-25
-GO-20161506128,homicide,2016,August,25,Thursday,0,N/A,139,Scarborough Village (139),-79.22282061,43.73957577,2016-08-25
 GO-20161506128,homicide,2016,August,25,Thursday,0,N/A,139,Scarborough Village (139),-79.22282061,43.73957577,2016-08-25
 GO-20161520715,homicide,2016,August,27,Saturday,0,N/A,70,South Riverdale (70),-79.35289985,43.66048853,2016-08-27
 GO-20161613172,homicide,2016,September,11,Sunday,0,N/A,85,South Parkdale (85),-79.4253333,43.63733981,2016-09-11
@@ -152,12 +138,10 @@ GO-2017662074,homicide,2017,April,14,Friday,0,N/A,117,L'Amoreaux (117),-79.33093
 GO-2017674351,homicide,2017,April,14,Friday,0,N/A,70,South Riverdale (70),-79.34358759,43.66028167,2017-04-14
 GO-2017703097,homicide,2017,April,21,Friday,0,N/A,108,Briar Hill-Belgravia (108),-79.45113725,43.69791059,2017-04-21
 GO-2017904599,homicide,2017,May,22,Monday,0,N/A,70,South Riverdale (70),-79.34519196,43.66708884,2017-05-22
-GO-2017904599,homicide,2017,May,22,Monday,0,N/A,70,South Riverdale (70),-79.34519196,43.66708884,2017-05-22
 GO-20171007434,homicide,2017,June,7,Wednesday,0,N/A,112,Beechborough-Greenbrook (112),-79.48287462,43.68836218,2017-06-07
 GO-20171035511,homicide,2017,June,11,Sunday,0,N/A,22,Humbermede (22),-79.5572796,43.74768039,2017-06-11
 GO-20171118832,homicide,2017,June,23,Friday,0,N/A,93,Dovercourt-Wallace Emerson-Junction (93),-79.44356096,43.66732192,2017-06-23
 GO-20171184598,homicide,2017,July,2,Sunday,0,N/A,72,Regent Park (72),-79.36476976,43.66044171,2017-07-02
-GO-20171319697,homicide,2017,July,23,Sunday,0,N/A,131,Rouge (131),-79.19919414,43.81330943,2017-07-23
 GO-20171319697,homicide,2017,July,23,Sunday,0,N/A,131,Rouge (131),-79.19919414,43.81330943,2017-07-23
 GO-20171323827,homicide,2017,July,23,Sunday,0,N/A,132,Malvern (132),-79.21028273,43.8101984,2017-07-23
 GO-20171371751,homicide,2017,July,30,Sunday,0,N/A,31,Yorkdale-Glen Park (31),-79.45242612,43.71432126,2017-07-30
@@ -177,7 +161,6 @@ GO-20171682920,homicide,2017,September,16,Saturday,0,N/A,77,Waterfront Communiti
 GO-20171677843,homicide,2017,September,16,Saturday,0,N/A,72,Regent Park (72),-79.3603238,43.66342025,2017-09-16
 GO-20171770154,homicide,2017,September,29,Friday,0,N/A,26,Downsview-Roding-CFB (26),-79.51334606,43.72198096,2017-09-29
 GO-20171778161,homicide,2017,October,1,Sunday,0,N/A,70,South Riverdale (70),-79.35494779,43.64121572,2017-10-01
-GO-20171778161,homicide,2017,October,1,Sunday,0,N/A,70,South Riverdale (70),-79.35494779,43.64121572,2017-10-01
 GO-20171798506,homicide,2017,October,4,Wednesday,0,N/A,4,Rexdale-Kipling (4),-79.56978664,43.72517504,2017-10-04
 GO-20171807017,homicide,2017,October,5,Thursday,0,N/A,6,Kingsview Village-The Westway (6),-79.5473517,43.69461419,2017-10-05
 GO-20171821632,homicide,2017,October,7,Saturday,0,N/A,60,Woodbine-Lumsden (60),-79.31594918,43.697519,2017-10-07
@@ -194,13 +177,9 @@ GO-20173121720,homicide,2017,December,4,Monday,0,N/A,139,Scarborough Village (13
 GO-20173140530,homicide,2017,December,6,Wednesday,0,N/A,133,Centennial Scarborough (133),-79.15053808,43.77645564,2017-12-06
 GO-20173181653,homicide,2017,December,12,Tuesday,0,N/A,132,Malvern (132),-79.21120593,43.81185082,2017-12-12
 GO-20173201016,homicide,2017,December,15,Friday,0,N/A,40,St.Andrew-Windfields (40),-79.38217918,43.75788343,2017-12-15
-GO-20173201016,homicide,2017,December,15,Friday,0,N/A,40,St.Andrew-Windfields (40),-79.38217918,43.75788343,2017-12-15
 GO-20173205177,homicide,2017,December,16,Saturday,0,N/A,77,Waterfront Communities-The Island (77),-79.37078557,43.6478303,2017-12-16
-GO-2018104863,homicide,2017,December,31,Sunday,0,N/A,55,Thorncliffe Park (55),-79.34138354,43.70801163,2017-12-31
-GO-2018104863,homicide,2017,December,31,Sunday,0,N/A,55,Thorncliffe Park (55),-79.34138354,43.70801163,2017-12-31
 GO-201817532,homicide,2018,January,3,Wednesday,0,N/A,7,Willowridge-Martingrove-Richview (7),-79.56320142,43.68149133,2018-01-03
 GO-201854152,homicide,2018,January,9,Tuesday,0,N/A,8,Humber Heights-Westmount (8),-79.51701309,43.69402122,2018-01-09
-GO-2018113424,homicide,2018,January,19,Friday,0,N/A,11,Eringate-Centennial-West Deane (11),-79.56841471,43.65939069,2018-01-19
 GO-2018113424,homicide,2018,January,19,Friday,0,N/A,11,Eringate-Centennial-West Deane (11),-79.56841471,43.65939069,2018-01-19
 GO-2018183793,homicide,2018,January,29,Monday,0,N/A,75,Church-Yonge Corridor (75),-79.3837124,43.66451369,2018-01-29
 GO-2018249547,homicide,2018,February,8,Thursday,0,N/A,52,Bayview Village (52),-79.38738585,43.78071974,2018-02-08
@@ -211,21 +190,10 @@ GO-2018413955,homicide,2018,March,6,Tuesday,0,N/A,45,Parkwoods-Donalda (45),-79.
 GO-2018444497,homicide,2018,March,10,Saturday,0,N/A,2,Mount Olive-Silverstone-Jamestown (2),-79.58793358,43.74529478,2018-03-10
 GO-2018484039,homicide,2018,March,16,Friday,0,N/A,8,Humber Heights-Westmount (8),-79.51658143,43.69382045,2018-03-16
 GO-2018489653,homicide,2018,March,17,Saturday,0,N/A,31,Yorkdale-Glen Park (31),-79.45551267,43.71763393,2018-03-17
-GO-2018489653,homicide,2018,March,17,Saturday,0,N/A,31,Yorkdale-Glen Park (31),-79.45551267,43.71763393,2018-03-17
 GO-2018619032,homicide,2018,April,6,Friday,0,N/A,119,Wexford/Maryvale (119),-79.31816076,43.76450904,2018-04-06
 GO-2018661938,homicide,2018,April,8,Sunday,0,N/A,119,Wexford/Maryvale (119),-79.30798068,43.74434917,2018-04-08
 GO-2018639035,homicide,2018,April,10,Tuesday,0,N/A,58,Old East York (58),-79.34322242,43.69502347,2018-04-10
 GO-2018711594,homicide,2018,April,21,Saturday,0,N/A,124,Kennedy Park (124),-79.25202762,43.72726556,2018-04-21
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
-GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
 GO-2018725711,homicide,2018,April,23,Monday,0,N/A,51,Willowdale East (51),-79.41055633,43.75994133,2018-04-23
 GO-2018813479,homicide,2018,May,6,Sunday,0,N/A,122,Birchcliffe-Cliffside (122),-79.27874539,43.67476696,2018-05-06
 GO-2018821806,homicide,2018,May,7,Monday,0,N/A,10,Princess-Rosethorn (10),-79.55016382,43.67338801,2018-05-07
@@ -246,9 +214,7 @@ GO-20181106259,homicide,2018,June,18,Monday,0,N/A,98,Rosedale-Moore Park (98),-7
 GO-20181142174,homicide,2018,June,23,Saturday,0,N/A,2,Mount Olive-Silverstone-Jamestown (2),-79.58883698,43.73572901,2018-06-23
 GO-20181146367,homicide,2018,June,24,Sunday,0,N/A,32,Englemount-Lawrence (32),-79.44354801,43.71877318,2018-06-24
 GO-20181146418,homicide,2018,June,24,Sunday,0,N/A,3,Thistletown-Beaumond Heights (3),-79.57586447,43.73829098,2018-06-24
-GO-20181146418,homicide,2018,June,24,Sunday,0,N/A,3,Thistletown-Beaumond Heights (3),-79.57586447,43.73829098,2018-06-24
 GO-20181152121,homicide,2018,June,25,Monday,0,N/A,73,Moss Park (73),-79.37135298,43.65906716,2018-06-25
-GO-20181191880,homicide,2018,June,30,Saturday,0,N/A,78,Kensington-Chinatown (78),-79.39369866,43.64934497,2018-06-30
 GO-20181191880,homicide,2018,June,30,Saturday,0,N/A,78,Kensington-Chinatown (78),-79.39369866,43.64934497,2018-06-30
 GO-20181198918,homicide,2018,July,1,Sunday,0,N/A,78,Kensington-Chinatown (78),-79.40233235,43.65522887,2018-07-01
 GO-20181194072,homicide,2018,July,1,Sunday,0,N/A,65,Greenwood-Coxwell (65),-79.33237918,43.68147804,2018-07-01
@@ -257,12 +223,10 @@ GO-20181240749,homicide,2018,July,8,Sunday,0,N/A,24,Black Creek (24),-79.5152277
 GO-20181245963,homicide,2018,July,9,Monday,0,N/A,24,Black Creek (24),-79.51622058,43.77012645,2018-07-09
 GO-20181329654,homicide,2018,July,21,Saturday,0,N/A,70,South Riverdale (70),-79.34770514,43.65685048,2018-07-21
 GO-20181341286,homicide,2018,July,23,Monday,0,N/A,67,Playter Estates-Danforth (67),-79.35147435,43.67804611,2018-07-23
-GO-20181341286,homicide,2018,July,23,Monday,0,N/A,67,Playter Estates-Danforth (67),-79.35147435,43.67804611,2018-07-23
 GO-20181358001,homicide,2018,July,25,Wednesday,0,N/A,21,Humber Summit (21),-79.56886444,43.75470343,2018-07-25
 GO-20181494077,homicide,2018,August,13,Monday,0,N/A,18,New Toronto (18),-79.50889593,43.60153166,2018-08-13
 GO-20181508181,homicide,2018,August,15,Wednesday,0,N/A,2,Mount Olive-Silverstone-Jamestown (2),-79.58904119,43.73438057,2018-08-15
 GO-20181526723,homicide,2018,August,18,Saturday,0,N/A,6,Kingsview Village-The Westway (6),-79.55446079,43.69378502,2018-08-18
-GO-20181527703,homicide,2018,August,18,Saturday,0,N/A,14,Islington-City Centre West (14),-79.55689984,43.61011982,2018-08-18
 GO-20181527703,homicide,2018,August,18,Saturday,0,N/A,14,Islington-City Centre West (14),-79.55689984,43.61011982,2018-08-18
 GO-20181528994,homicide,2018,August,19,Sunday,0,N/A,73,Moss Park (73),-79.36502244,43.65244309,2018-08-19
 GO-20181548479,homicide,2018,August,22,Wednesday,0,N/A,66,Danforth (66),-79.34072784,43.68011784,2018-08-22
