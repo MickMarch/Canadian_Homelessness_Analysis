@@ -1,6 +1,4 @@
 # Branch work, delete before merge
-datasets/
-cleaned_data/
 .vscode/
 
 # Byte-compiled / optimized / DLL files
