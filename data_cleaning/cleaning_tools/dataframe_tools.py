@@ -38,14 +38,14 @@ class TorontoCrimeDataCleaner:
 
         # Establishes columns to use for every dataframe entered
         if not columns_to_keep:
-            self.columns_to_keep = ['OCC_YEAR', 'OCC_MONTH', 'OCC_DAY', 
+            self.columns_to_keep = ['EVENT_UNIQUE_ID', 'OCC_YEAR', 'OCC_MONTH', 'OCC_DAY', 
                                     'OCC_DOW','OCC_HOUR', 'PREMISES_TYPE','HOOD_140', 
                                     'NEIGHBOURHOOD_140', 'LONG_WGS84', 'LAT_WGS84', 
             ]
         else: 
             self.columns_to_keep = [columns_to_keep]
         
-        self.columns_to_keep.insert(0,"CRIME")
+        self.columns_to_keep.insert(1,"CRIME")
 
         # This will store all active dataframes
         self.df_dict = {}
@@ -62,6 +62,7 @@ class TorontoCrimeDataCleaner:
         print("Special column reformatting initiated for 'traffic_collision' crime type. ")
         # Replace relevant column names to match pipeline
         df.rename(columns={
+            "EventUniqueId": "EVENT_UNIQUE_ID",
             "Month": "OCC_MONTH",
             "Day_of_Week": "OCC_DOW",
             "Year": "OCC_YEAR",
@@ -148,13 +149,19 @@ class TorontoCrimeDataCleaner:
 
         print("Creating 'OCC_DATETIME' column out of date columns...")
         try:
-            df['OCC_DATETIME'] = df['OCC_MONTH'] + " " + df['OCC_DAY'].astype(str) + " " + df['OCC_YEAR'].astype(str) + " " + df['OCC_HOUR'].astype(str) + ":00:00"
+            df['OCC_DATETIME'] = df['OCC_MONTH'] + " " + df['OCC_DAY'].astype(str) + " " + df['OCC_YEAR'].astype(str)
             df['OCC_DATETIME'] = pd.to_datetime(df['OCC_DATETIME'])
             return df
         except Exception as err:
             print("**** FAILED CLEANING SEQUENCE ****")
             print(f"Error in _create_datetime_column(): {err}")
             print("--------------------------")
+
+    def _reorder_columns(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Internal method to reorder the dataframes"""
+
+        print("Reordering columns...")
+        new_columns = df.columns
 
     def _clean_dataframe(self, df: pd.DataFrame) -> pd.DataFrame:
         """Internal method to utilize all preceding cleaning tools"""
@@ -324,6 +331,7 @@ class TorontoCrimeDataCleaner:
             print("Sorry, you need to have more than 1 dataframe added through .csv_to_dataframe()")
         else:
             self.df_dict[new_merged_df_name] = pd.concat([self.df_dict[df] for df in self.df_dict.keys() if "_merged" not in df]).reset_index(drop=True)
+            self.df_dict[new_merged_df_name].drop_duplicates(subset="EVENT_UNIQUE_ID", inplace=True)
             self.original_file_name[new_merged_df_name] = new_merged_df_name
             return self.df_dict[new_merged_df_name]
         
@@ -364,6 +372,7 @@ class TorontoCrimeDataCleaner:
             print(f'List that was passed: {final_merging_list}')
         else:
             self.df_dict[new_merged_df_name] = pd.concat([self.df_dict[df] for df in final_merging_list]).reset_index(drop=True)
+            self.df_dict[new_merged_df_name].drop_duplicates(subset="EVENT_UNIQUE_ID", inplace=True)
             self.original_file_name[new_merged_df_name] = new_merged_df_name
             return self.df_dict[new_merged_df_name]
 
