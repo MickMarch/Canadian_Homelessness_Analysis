@@ -46,8 +46,7 @@ The purpose of this project is to analyze data to answer the following question:
 * Database          - [Postgress Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/PosgreSQL)
     * [ERD Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/PosgreSQL/ERD_mockup_Segment1.png)
 * Dashboard         - [Dashboard Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/Dashboard_Mockup.pptx)
-    * <br>
-![Dashboard mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/img/Dashboard_Mockup.png)
+    * ![Dashboard mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/img/Dashboard_Mockup.png)
 
 
 
