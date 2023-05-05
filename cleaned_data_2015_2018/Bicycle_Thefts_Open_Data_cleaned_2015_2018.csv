@@ -1,4 +1,4 @@
-EVENT_UNIQUE_ID,CRIME,OCC_YEAR,OCC_MONTH,OCC_DAY,OCC_DOW,OCC_HOUR,PREMISES_TYPE,HOOD_140,NEIGHBOURHOOD_140,LONG_WGS84,LAT_WGS84,OCC_DATETIME
+event_unique_id,crime,occ_year,occ_month,occ_day,occ_dow,occ_hour,premises_type,hood_140,neighbourhood_140,long_wgs84,lat_wgs84,date
 GO-20156863,bicycle_theft,2015,January,1,Thursday,22,Outside,77,Waterfront Communities-The Island (77),-79.3907926370796,43.6491251822183,2015-01-01
 GO-20159000017,bicycle_theft,2015,January,2,Friday,9,House,107,Oakwood Village (107),-79.4453552988955,43.692537813283,2015-01-02
 GO-20159000070,bicycle_theft,2015,January,4,Sunday,18,Educational,75,Church-Yonge Corridor (75),-79.3807635674754,43.6575446405909,2015-01-04

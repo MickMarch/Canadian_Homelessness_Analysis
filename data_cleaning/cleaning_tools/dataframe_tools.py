@@ -147,21 +147,26 @@ class TorontoCrimeDataCleaner:
     def _create_datetime_column(self, df: pd.DataFrame) -> pd.DataFrame:
         """Internal method to create pd.to_datetime() object out of the different date columns"""
 
-        print("Creating 'OCC_DATETIME' column out of date columns...")
+        print("Creating 'DATE' column out of date columns...")
         try:
-            df['OCC_DATETIME'] = df['OCC_MONTH'] + " " + df['OCC_DAY'].astype(str) + " " + df['OCC_YEAR'].astype(str)
-            df['OCC_DATETIME'] = pd.to_datetime(df['OCC_DATETIME'])
+            df['DATE'] = df['OCC_MONTH'] + " " + df['OCC_DAY'].astype(str) + " " + df['OCC_YEAR'].astype(str)
+            df['DATE'] = pd.to_datetime(df['DATE'])
             return df
         except Exception as err:
             print("**** FAILED CLEANING SEQUENCE ****")
             print(f"Error in _create_datetime_column(): {err}")
             print("--------------------------")
 
-    def _reorder_columns(self, df: pd.DataFrame) -> pd.DataFrame:
+    def _reformat_column_names(self, df: pd.DataFrame) -> pd.DataFrame:
         """Internal method to reorder the dataframes"""
 
-        print("Reordering columns...")
-        new_columns = df.columns
+        print("Reformatting column names...")
+
+        new_column_names = [column.lower() for column in df.columns]
+        df.columns = new_column_names
+        return df
+        
+        
 
     def _clean_dataframe(self, df: pd.DataFrame) -> pd.DataFrame:
         """Internal method to utilize all preceding cleaning tools"""
@@ -175,6 +180,7 @@ class TorontoCrimeDataCleaner:
         df = self._remove_whitespace(df)
         df = self._filter_by_year(df)
         df = self._create_datetime_column(df)
+        df = self._reformat_column_names(df)
 
         print("Successfully cleaned data!")
         return df
@@ -331,7 +337,7 @@ class TorontoCrimeDataCleaner:
             print("Sorry, you need to have more than 1 dataframe added through .csv_to_dataframe()")
         else:
             self.df_dict[new_merged_df_name] = pd.concat([self.df_dict[df] for df in self.df_dict.keys() if "_merged" not in df]).reset_index(drop=True)
-            self.df_dict[new_merged_df_name].drop_duplicates(subset="EVENT_UNIQUE_ID", inplace=True)
+            self.df_dict[new_merged_df_name].drop_duplicates(subset="EVENT_UNIQUE_ID".lower(), inplace=True)
             self.original_file_name[new_merged_df_name] = new_merged_df_name
             return self.df_dict[new_merged_df_name]
         
@@ -372,7 +378,7 @@ class TorontoCrimeDataCleaner:
             print(f'List that was passed: {final_merging_list}')
         else:
             self.df_dict[new_merged_df_name] = pd.concat([self.df_dict[df] for df in final_merging_list]).reset_index(drop=True)
-            self.df_dict[new_merged_df_name].drop_duplicates(subset="EVENT_UNIQUE_ID", inplace=True)
+            self.df_dict[new_merged_df_name].drop_duplicates(subset="EVENT_UNIQUE_ID".lower(), inplace=True)
             self.original_file_name[new_merged_df_name] = new_merged_df_name
             return self.df_dict[new_merged_df_name]
 

@@ -1,4 +1,4 @@
-EVENT_UNIQUE_ID,CRIME,OCC_YEAR,OCC_MONTH,OCC_DAY,OCC_DOW,OCC_HOUR,PREMISES_TYPE,HOOD_140,NEIGHBOURHOOD_140,LONG_WGS84,LAT_WGS84,OCC_DATETIME
+event_unique_id,crime,occ_year,occ_month,occ_day,occ_dow,occ_hour,premises_type,hood_140,neighbourhood_140,long_wgs84,lat_wgs84,date
 GO-20154592,break_and_enter,2015,January,1,Thursday,20,Commercial,113,Weston (113),-79.5036381802578,43.702272855618,2015-01-01
 GO-20154708,break_and_enter,2015,January,1,Thursday,21,House,126,Dorset Park (126),-79.290886591646,43.7659472073193,2015-01-01
 GO-20154818,break_and_enter,2015,January,1,Thursday,21,Commercial,81,Trinity-Bellwoods (81),-79.4066856233598,43.647060909068,2015-01-01

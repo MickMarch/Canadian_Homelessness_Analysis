@@ -1,4 +1,4 @@
-EVENT_UNIQUE_ID,CRIME,OCC_YEAR,OCC_MONTH,OCC_DAY,OCC_DOW,OCC_HOUR,PREMISES_TYPE,HOOD_140,NEIGHBOURHOOD_140,LONG_WGS84,LAT_WGS84,OCC_DATETIME
+event_unique_id,crime,occ_year,occ_month,occ_day,occ_dow,occ_hour,premises_type,hood_140,neighbourhood_140,long_wgs84,lat_wgs84,date
 GO-201555992,homicide,2015,January,10,Saturday,0,N/A,75,Church-Yonge Corridor (75),-79.37671331,43.66241268,2015-01-10
 GO-201594334,homicide,2015,January,16,Friday,0,N/A,1,West Humber-Clairville (1),-79.59622148,43.74143135,2015-01-16
 GO-201599853,homicide,2015,January,17,Saturday,0,N/A,50,Newtonbrook East (50),-79.4126711,43.78133031,2015-01-17
