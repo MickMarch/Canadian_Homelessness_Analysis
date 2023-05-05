@@ -4,43 +4,42 @@ An analysis of Crime Rates in the Greater Toronto Area with regard to the impact
 ## Project Overview
 
 ### Purpose
-The purpose of this project is to analyze data to answer the following question:
+The purpose of this project is to analyze data to answer the following question:<br>
 ***Can changes in weather affect crime rates?***
 
 ### Technologies
 
 - Python
 - Jupyter Notebooks
-- Machine Learning
-- Database (PostgreSQL)
+- Database (PostgreSQL), SQLAlchemy
+- Machine Learning - Linear Regression model(s)
+- Neural Networks, Keras
 - Tableau
 
 ### Data Set
-Data has been sourced from the Toronto Police Service Data Catalogue. 
-https://data.torontopolice.on.ca/pages/catalogue
 
+* Cleaned Data files can be found here: [cleaned_data_2015_2018](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/cleaned_data_2015_2018)
 
-Raw data csv files can be found in the datasets folder within the GitHub repository.  The exception is the Major Crimes CSV (over 100 M).  Download the file here : https://data.torontopolice.on.ca/datasets/TorontoPS::major-crime-indicators-open-data/about
-
-The crime data columns glossary:
-![crime_glossary_01](./img/toronto_crime_glossary_01.png)
-![crime_glossary_02](./img/toronto_crime_glossary_02.png)
+* Source: Data has been sourced from the Toronto Police Service Data Catalogue. [cleaned_data_2015_2018](https://data.torontopolice.on.ca/pages/catalogue)
+    * Source raw data can be found here: The exception is the Major Crimes CSV (over 100 M).  Download the file here : [Raw Data - Major Crimes Indicators](https://data.torontopolice.on.ca/datasets/TorontoPS::major-crime-indicators-open-data/about)
 
 ### Project Roles and Activities
+
 * Focus areas:
     * Data cleaning - Michael 
-    * Data base PostgreSQL - Susan 
+    * Data base PostgreSQL - Susan
     * Visualization and data exploration - Nitasha
   
-
 ## Deliverables
 
 ### Segment 1 Deliverables
-* Presentation      - ??
-* GitHub            - complete
+* Presentation      - mock-ups, README
+* GitHub            - complete, branching in progress
 * Machine Learning  - 
-* Database          -
-* Dashboard         - 
+* Machine Learning models mock-up - [Model(s) Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/NN_Model)
+* Database          - [Postgress Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/PosgreSQL)
+    * ERD [ERD Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/PosgreSQL/ERD_mockup_Segment1.png)
+* Dashboard         - [Dashboard Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/Dashboard_Mockup.pptx)
 
 
 
