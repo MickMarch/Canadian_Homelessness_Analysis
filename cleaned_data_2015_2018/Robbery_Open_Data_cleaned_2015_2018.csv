@@ -1,4 +1,4 @@
-EVENT_UNIQUE_ID,CRIME,OCC_YEAR,OCC_MONTH,OCC_DAY,OCC_DOW,OCC_HOUR,PREMISES_TYPE,HOOD_140,NEIGHBOURHOOD_140,LONG_WGS84,LAT_WGS84,OCC_DATETIME
+event_unique_id,crime,occ_year,occ_month,occ_day,occ_dow,occ_hour,premises_type,hood_140,neighbourhood_140,long_wgs84,lat_wgs84,date
 GO-2015812,robbery,2015,January,1,Thursday,2,Outside,8,Humber Heights-Westmount (8),-79.51956775916,43.6858944093949,2015-01-01
 GO-20151880,robbery,2015,January,1,Thursday,6,Outside,27,York University Heights (27),-79.5016980818837,43.7682621654028,2015-01-01
 GO-20151880,robbery,2015,January,1,Thursday,6,Outside,27,York University Heights (27),-79.5016980818837,43.7682621654028,2015-01-01

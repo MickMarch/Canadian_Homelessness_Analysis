@@ -1,4 +1,4 @@
-EVENT_UNIQUE_ID,CRIME,OCC_YEAR,OCC_MONTH,OCC_DAY,OCC_DOW,OCC_HOUR,PREMISES_TYPE,HOOD_140,NEIGHBOURHOOD_140,LONG_WGS84,LAT_WGS84,OCC_DATETIME
+event_unique_id,crime,occ_year,occ_month,occ_day,occ_dow,occ_hour,premises_type,hood_140,neighbourhood_140,long_wgs84,lat_wgs84,date
 GO-20151105533,shooting,2015,July,1,Wednesday,4,N/A,107,Oakwood Village (107),-79.4407517159177,43.6973112467238,2015-07-01
 GO-20152239926,shooting,2015,December,31,Thursday,18,N/A,26,Downsview-Roding-CFB (26),-79.4820659578942,43.7266361406988,2015-12-31
 GO-2015484508,shooting,2015,March,23,Monday,2,N/A,14,Islington-City Centre West (14),-79.5640765438649,43.6524496723575,2015-03-23

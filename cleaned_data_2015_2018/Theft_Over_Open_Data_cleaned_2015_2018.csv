@@ -1,4 +1,4 @@
-EVENT_UNIQUE_ID,CRIME,OCC_YEAR,OCC_MONTH,OCC_DAY,OCC_DOW,OCC_HOUR,PREMISES_TYPE,HOOD_140,NEIGHBOURHOOD_140,LONG_WGS84,LAT_WGS84,OCC_DATETIME
+event_unique_id,crime,occ_year,occ_month,occ_day,occ_dow,occ_hour,premises_type,hood_140,neighbourhood_140,long_wgs84,lat_wgs84,date
 GO-20152287,theft_over,2015,January,1,Thursday,1,Outside,27,York University Heights (27),-79.475885472821,43.7553062109353,2015-01-01
 GO-20157557,theft_over,2015,January,2,Friday,10,Commercial,47,Don Valley Village (47),-79.3437191362443,43.7758285046409,2015-01-02
 GO-201511826,theft_over,2015,January,3,Saturday,0,House,26,Downsview-Roding-CFB (26),-79.4913629567242,43.7335583211369,2015-01-03
