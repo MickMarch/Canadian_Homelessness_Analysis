@@ -27,7 +27,7 @@ class TorontoCrimeDataCleaner:
         """
         
         # Sets range of years, and corrects user error if values are input in the wrong order
-        if min_year < max_year: 
+        if min_year <= max_year: 
             self.min_year = min_year
             self.max_year = max_year
         else:
@@ -408,7 +408,7 @@ class TorontoCrimeDataCleaner:
 
         final_df_list = []
 
-        for df_name in final_df_list:
+        for df_name in df_list:
             if df_name in self.df_dict:
                 final_df_list.append(df_name)
             else:
