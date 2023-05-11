@@ -9,9 +9,12 @@ We are taking a look at Toronto Crime rates from 2015 to 2018 to see if changes 
 
 Outcome:  Can we predict higher precedence of crime based on weather forecasts?  Can Police Services use weather to predict higher staffing levels, increased surveillance in high crime areas based on the weather forecast?  If our climate is experiencing changes will these changes affect the long term police services needs and budget?
 
-### Purpose
+### Project Question
 The purpose of this project is to analyze data to answer the following question:<br>
 ***Can changes in weather affect crime rates?***
+
+### Outcome
+Can we predict higher precedence of crime based on weather forecasts?  Provide Police services an interactive resource that can be used to evaluate the effect of weather on crime trends. Can Police Services use weather to predict higher staffing levels, increased surveillance in high crime areas based on the weather forecast?  If our climate is experiencing changes will these changes affect the long term police services needs and budget?
 
 ### Technologies
 
@@ -22,12 +25,34 @@ The purpose of this project is to analyze data to answer the following question:
 - Neural Networks, Keras
 - Tableau
 
-### Data Set
+### Data Set - Initial Raw Data  (num of rows, size, )
 
 * Cleaned Data files can be found here: [cleaned_data_2015_2018](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/cleaned_data_2015_2018)
 
 * Source: Data has been sourced from the Toronto Police Service Data Catalogue. [cleaned_data_2015_2018](https://data.torontopolice.on.ca/pages/catalogue)
     * Source raw data can be found here: The exception is the Major Crimes CSV (over 100 M).  Download the file here : [Raw Data - Major Crimes Indicators](https://data.torontopolice.on.ca/datasets/TorontoPS::major-crime-indicators-open-data/about)
+
+
+### Data Set - Data Cleaning
+
+### Data Exploration
+
+
+### Data Pre-Processing
+
+
+### Machine Learning 
+
+
+
+### Neural Network Modelling
+
+### Visualizations 
+ https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash?publish=yes
+
+
+
+
 
 ## Project Roles and Activities
 
@@ -36,7 +61,15 @@ The purpose of this project is to analyze data to answer the following question:
     * Data base PostgreSQL - Susan
     * Visualization and data exploration - Nitasha
   
-## Deliverables
+* Communication Protocols:
+- branch management
+- additional team meetings (MS Teams)
+- Slack group
+- Task management spreadsheet
+- Each one owns tasks and updates status as task and deliverable are completed
+
+
+
 
 ### Segment 1 Deliverables
 * Presentation      - mock-ups, README
@@ -48,5 +81,4 @@ The purpose of this project is to analyze data to answer the following question:
 * Dashboard         - [Dashboard Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/Dashboard_Mockup.pptx)<br>
     ![Dashboard mock-up](Doc_Assets/Dashboard_Mockup.png)
     
- ### Draft Dashboard 
- https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash?publish=yes
+
