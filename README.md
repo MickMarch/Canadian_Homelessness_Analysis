@@ -47,3 +47,6 @@ The purpose of this project is to analyze data to answer the following question:
     * [ERD Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/PosgreSQL/ERD_mockup_Segment1.png)
 * Dashboard         - [Dashboard Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/Dashboard_Mockup.pptx)<br>
     ![Dashboard mock-up](Doc_Assets/Dashboard_Mockup.png)
+    
+ ### Draft Dashboard 
+ https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash?publish=yes
