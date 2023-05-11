@@ -10,6 +10,7 @@ __pycache__/
 __pycache__
 Private_Susan/
 .DS_Store
+*.env
 
 # Distribution / packaging
 .Python
