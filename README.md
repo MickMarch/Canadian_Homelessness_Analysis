@@ -179,9 +179,9 @@ The correlation matrix shows some correlation to these more serious events with 
 ![High Temperature](Doc_Assets/MachineLearning/corr_assault_homicide_shooting.png)
 
 ### Machine Learning Summary
-Between the Linear Regression and Correlation matrices it was clear that certain types of crime did not have a clear correlation to weather.  Homicide for example was consistently flat in the linear regression and very low in the corrleation matrix. 
+Between the Linear Regression and Correlation matrices it was clear that certain types of crime did not have a clear correlation to weather.  Homicide for example was consistently flat in the linear regression and very low in the correlation matrix. 
 
-This machine learning analysis can be used to focus the Neural Network tuning to ensure a cleaner and more effective model.  There were 5 types of crime that were consistently higher in correleation:
+This machine learning analysis can be used to focus the Neural Network tuning to ensure a cleaner and more effective model.  There were 5 types of crime that were consistently higher in correlation:
 * Thefts: Bicycle Theft, Theft from an Auto, Auto Theft, Robbery, Break and Enter.
 
 
