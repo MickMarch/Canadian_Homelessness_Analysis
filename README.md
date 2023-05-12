@@ -9,9 +9,12 @@ We are taking a look at Toronto Crime rates from 2015 to 2018 to see if changes 
 
 Outcome:  Can we predict higher precedence of crime based on weather forecasts?  Can Police Services use weather to predict higher staffing levels, increased surveillance in high crime areas based on the weather forecast?  If our climate is experiencing changes will these changes affect the long term police services needs and budget?
 
-### Purpose
+### Project Question
 The purpose of this project is to analyze data to answer the following question:<br>
 ***Can changes in weather affect crime rates?***
+
+### Outcome
+Can we predict higher precedence of crime based on weather forecasts?  Provide Police services an interactive resource that can be used to evaluate the effect of weather on crime trends. Can Police Services use weather to predict higher staffing levels, increased surveillance in high crime areas based on the weather forecast?  If our climate is experiencing changes will these changes affect the long term police services needs and budget?
 
 ### Technologies
 
@@ -22,12 +25,83 @@ The purpose of this project is to analyze data to answer the following question:
 - Neural Networks, Keras
 - Tableau
 
-### Data Set
+### Data Set - Initial Raw Data  (num of rows, size, )
 
+#### Source Data
+
+1. **Crime Data** 
+The crime data used in this project comes from [The Toronto Police Service Data Catalogue](https://data.torontopolice.on.ca/pages/catalogue).
+
+The data sets are: 
+* Assault_Open_Data.csv
+* Auto_Theft_Open_Data.csv
+* Bicycle_Thefts_Open_Data.csv
+* Break_and_Enter_Open_Data.csv
+* Homicides_Open_Data_ASR_RC_TBL_002.csv
+* Robbery_Open_Data.csv
+* Shooting_and_Firearm_Discharges_Open_Data.csv
+* Theft_From_Motor_Vehicle_Open_Data.csv
+* Theft_Over_Open_Data.csv
+* Traffic_Collisions_(ASR-T-TBL-001).csv
+
+This data contained information in which was considered interesting to this project:
+* EVENT_UNIQUE_ID
+* OCC_DATE (***OCC** = Occurrence*)
+* OCC_YEAR
+* OCC_MONTH
+* OCC_DAY
+* OCC_DOW
+* OCC_HOUR
+* PREMISES_TYPE
+* MCI_CATEGORY (***MCI** = Major Crime Indicators*)
+* HOOD_140 (*This refers to the 140 neighbourhood division of Toronto*)
+* NEIGHBOURHOOD_140 (*This refers to the 140 neighbourhood division of Toronto*)
+* LONG_WGS84 (*Longitude*)
+* LAT_WGS84 (*Latitude*)
+
+
+
+* **Weather Data:** The weather data used in this project comes from [toronto.weatherstats.com](https://toronto.weatherstats.ca/download.html).
+
+weatherstats.com [quote](https://www.weatherstats.ca/faq/#data-source): *Data is collected over time from Environment and Climate Change Canada and from the Citizen Weather Observer Program (CWOP). Every individual location web site has several links on the "about page" so you can see where the information came from.*
+
+
+
+### Data Set - Data Cleaning
 * Cleaned Data files can be found here: [cleaned_data_2015_2018](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/cleaned_data_2015_2018)
 
-* Source: Data has been sourced from the Toronto Police Service Data Catalogue. [cleaned_data_2015_2018](https://data.torontopolice.on.ca/pages/catalogue)
-    * Source raw data can be found here: The exception is the Major Crimes CSV (over 100 M).  Download the file here : [Raw Data - Major Crimes Indicators](https://data.torontopolice.on.ca/datasets/TorontoPS::major-crime-indicators-open-data/about)
+### Data Exploration
+https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/Project_Notebooks/Data_Exploration
+
+Crime dataset: 
+The cleaned crime dataset has 480, 903 rows and 12 columns. There are 10 different crime types with traffic collisions comprising 60% of the dataset. 
+![crimetypes](Doc_Assets/crimetypes.png)
+
+Since weather obviously has an impact on traffic collisions, we decided to remove this crime type from the analysis. 
+
+We also see that crime is slightly increasing over time, pointing to a need to figure out how to reduce crime and prevent further increases. 
+![crimeovertime](Doc_Assets/crimeovertime.png)
+
+There are no null values within the dataset except for 1,811 rows (0.38% of the dataset) with no premise type (this is where the crime took place, i.e. an apartment, outside, etc). 
+
+Weather dataset: 
+There are 1,461 rows and 13 columns. This includes the date, max temp, min temp, max humidity, avg humidity, avg sea pressure, max wind speed, precipitation, rain, snow, snow on ground, daylight and avg cloud cover. During this time period, the max temperature in Toronto was 36 degrees and the min temperature was -26.3 degrees. 
+
+### Data Pre-Processing
+
+
+### Machine Learning 
+
+
+
+### Neural Network Modelling
+
+### Visualizations 
+ https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash?publish=yes
+
+
+
+
 
 ## Project Roles and Activities
 
@@ -36,7 +110,15 @@ The purpose of this project is to analyze data to answer the following question:
     * Data base PostgreSQL - Susan
     * Visualization and data exploration - Nitasha
   
-## Deliverables
+* Communication Protocols:
+- branch management
+- additional team meetings (MS Teams)
+- Slack group
+- Task management spreadsheet
+- Each one owns tasks and updates status as task and deliverable are completed
+
+
+
 
 ### Segment 1 Deliverables
 * Presentation      - mock-ups, README
@@ -48,5 +130,4 @@ The purpose of this project is to analyze data to answer the following question:
 * Dashboard         - [Dashboard Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/Dashboard_Mockup.pptx)<br>
     ![Dashboard mock-up](Doc_Assets/Dashboard_Mockup.png)
     
- ### Draft Dashboard 
- https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash?publish=yes
+
