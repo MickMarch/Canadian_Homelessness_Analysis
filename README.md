@@ -42,6 +42,63 @@ Can we predict higher precedence of crime based on weather forecasts?  Provide P
 
 
 ### Machine Learning 
+Initial investigation into machine learning delivered interesting insights into how different types of weather events effect different types of crime.  
+
+For each Linear Regression model preprocessing of the data was performed.
+* data pulled from PostgreSQL tables; All Crime table and Weather table
+* 'crime' column was grouped by date and day of the week (occ_dow) and split into seperate columns containing the individual crime types, and crime events were totalal by type/date.
+* crime data and weather data was merged into a single data set
+     ![All Data Columns](Doc_Assets/MachineLearning/ml_total_dataset.png)
+* each crime type was isolated and tested against the weather feature focused in the notebook. A scatter diagram, and correlation matrix was built for each crime type
+
+### Linear Regression
+Several Linear Regression notebooks were created targeting specific weather events; 
+- Max Temp (maximum temperfature during a given day), 
+- Percipitation (includes rain or snow), 
+- Pressure (average sea level pressure at the reading station), and 
+- Snow on the Ground (snow accumulation).
+
+<b>Precipitation :</b><br>
+Although one might think initially that this would have a high effect on crime, it turned out the be the least of the 4 weather types.  Not surprisingly bicycle theft did have a significant decline as percipitation increased.  However the overall slope was negligable.<br>
+![Precipitation Scatter](Doc_Assets/MachineLearning/ml_reg_precipitation.png)
+
+<b>Air Pressure :</b><br>
+It has been noted that on many levels changes in air pressure can effect the human body from the sounds we hear to our emotions such as irritability.  A lower air pressure has a consistent relation to an increase in certain types of crime.<br>
+![Air Pressure](Doc_Assets/MachineLearning/ml_pressure.png)
+
+<b>Higher Temperature :<b><br>
+Temperature as well can effect the human condition.  High temperatures had the strongest effect on increases in crime.  <br>
+
+![High Temperature](Doc_Assets/MachineLearning/ml_high_temp.png)
+
+<b>Snow on the Ground :<b><br>
+While precipitation itself didn't show a significant correlation accumulation of snow on the ground had a higher relationship to certain crimes.   <br>
+
+![Snow accumulation](Doc_Assets/MachineLearning/ml_snow.png)
+
+### <b>Correlation Matrix </b><br>
+A correlation matrix was run in each of the weather feature Linear Regression notebooks by crime type.  Also a Correlation Matrix was run on groupings of crime types.<br>
+
+<b>Bicycle theft, Theft from a motor vehicle and Theft Over:</b><br>
+A clear picture shows a high correlation between max temperature and bicycle theft confirming that connection.  Also a correlation between max temp and theft from a motor vehicle.
+
+![Correlattion - theft](Doc_Assets/MachineLearning/corr_bicycle_theft.png)
+
+<b>Auto Theft, Brean and Enter, and Robbery:</b><br>
+These type had a common correlation level between the key weather features.  Through the correlation matrix below and regression modelling these had consistenly higher relevance.
+
+![Major Theft](Doc_Assets/MachineLearning/corr_autoTheft_BandE_robbery.png)
+
+<b>Assault, Homicide and Shoortings:</b><br>
+The correlation matrix shows some correlation to these more serious events with max temperature and assault having the highest correlation.  Homicide however consistently has a lower correlation and regression predictability and with shooting (firearms events)
+
+![High Temperature](Doc_Assets/MachineLearning/corr_assault_homicide_shooting.png)
+
+### Machine Learning Summary
+Between the Linear Regression and Correlation matrices it was clear that certain types of crime did not have a clear correlation to weather.  Homicide for example was consistently flat in the linear regression and very low in the corrleation matrix. 
+
+This machine learning analysis can be used to focus the Neural Network tuning to ensure a cleaner and more effective model.  There were 5 types of crime that were consistently higher in correleation:
+* Thefts: Bicycle Theft, Theft from an Auto, Auto Theft, Robbery, Break and Enter.
 
 
 
