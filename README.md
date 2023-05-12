@@ -42,6 +42,9 @@ Crime dataset:
 The cleaned crime dataset has 480, 903 rows and 12 columns. There are 10 different crime types with traffic collisions comprising 60% of the dataset. 
 ![crimetypes](Doc_Assets/crimetypes.png)
 
+![crimetypes](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/assets/113721712/6f58e1fb-a799-41dc-938a-bc66f505c698)
+
+
 Since weather obviously has an impact on traffic collisions, we decided to remove this crime type from the analysis. 
 
 We also see that crime is slightly increasing over time, pointing to a need to figure out how to reduce crime and prevent further increases. 
