@@ -27,13 +27,48 @@ Can we predict higher precedence of crime based on weather forecasts?  Provide P
 
 ### Data Set - Initial Raw Data  (num of rows, size, )
 
-* Cleaned Data files can be found here: [cleaned_data_2015_2018](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/cleaned_data_2015_2018)
+#### Source Data
 
-* Source: Data has been sourced from the Toronto Police Service Data Catalogue. [cleaned_data_2015_2018](https://data.torontopolice.on.ca/pages/catalogue)
-    * Source raw data can be found here: The exception is the Major Crimes CSV (over 100 M).  Download the file here : [Raw Data - Major Crimes Indicators](https://data.torontopolice.on.ca/datasets/TorontoPS::major-crime-indicators-open-data/about)
+1. **Crime Data** 
+The crime data used in this project comes from [The Toronto Police Service Data Catalogue](https://data.torontopolice.on.ca/pages/catalogue).
+
+The data sets are: 
+* Assault_Open_Data.csv
+* Auto_Theft_Open_Data.csv
+* Bicycle_Thefts_Open_Data.csv
+* Break_and_Enter_Open_Data.csv
+* Homicides_Open_Data_ASR_RC_TBL_002.csv
+* Robbery_Open_Data.csv
+* Shooting_and_Firearm_Discharges_Open_Data.csv
+* Theft_From_Motor_Vehicle_Open_Data.csv
+* Theft_Over_Open_Data.csv
+* Traffic_Collisions_(ASR-T-TBL-001).csv
+
+This data contained information in which was considered interesting to this project:
+* EVENT_UNIQUE_ID
+* OCC_DATE (***OCC** = Occurrence*)
+* OCC_YEAR
+* OCC_MONTH
+* OCC_DAY
+* OCC_DOW
+* OCC_HOUR
+* PREMISES_TYPE
+* MCI_CATEGORY (***MCI** = Major Crime Indicators*)
+* HOOD_140 (*This refers to the 140 neighbourhood division of Toronto*)
+* NEIGHBOURHOOD_140 (*This refers to the 140 neighbourhood division of Toronto*)
+* LONG_WGS84 (*Longitude*)
+* LAT_WGS84 (*Latitude*)
+
+
+
+* **Weather Data:** The weather data used in this project comes from [toronto.weatherstats.com](https://toronto.weatherstats.ca/download.html).
+
+weatherstats.com [quote](https://www.weatherstats.ca/faq/#data-source): *Data is collected over time from Environment and Climate Change Canada and from the Citizen Weather Observer Program (CWOP). Every individual location web site has several links on the "about page" so you can see where the information came from.*
+
 
 
 ### Data Set - Data Cleaning
+* Cleaned Data files can be found here: [cleaned_data_2015_2018](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/cleaned_data_2015_2018)
 
 ### Data Exploration
 https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/Project_Notebooks/Data_Exploration
