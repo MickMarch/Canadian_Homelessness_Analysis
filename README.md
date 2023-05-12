@@ -46,7 +46,7 @@ The cleaned crime dataset has 480, 903 rows and 12 columns. There are 10 differe
 Since weather obviously has an impact on traffic collisions, we decided to remove this crime type from the analysis. 
 
 We also see that crime is slightly increasing over time, pointing to a need to figure out how to reduce crime and prevent further increases. 
-![crimeovertime](Doc_Assets/crimeovertime.png)
+<img width="500" height="400" alt="crimeovertime" src="https://raw.githubusercontent.com/MickMarch/Weather_Impact_On_Crime_Rates/tash_update_readme/Doc_Assets/crimeovertime.png">
 
 There are no null values within the dataset except for 1,811 rows (0.38% of the dataset) with no premise type (this is where the crime took place, i.e. an apartment, outside, etc). 
 
