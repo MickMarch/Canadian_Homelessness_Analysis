@@ -40,9 +40,8 @@ https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/Project_Not
 
 Crime dataset: 
 The cleaned crime dataset has 480, 903 rows and 12 columns. There are 10 different crime types with traffic collisions comprising 60% of the dataset. 
-![crimetypes](Doc_Assets/crimetypes.png)
 
-<img width="400" height="400" alt="crimetypes" src="https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/assets/113721712/d1c81908-76a1-4cb0-a5e6-f5d3126e4347">
+<img width="500" height="400" alt="crimetypes" src="https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/assets/113721712/d1c81908-76a1-4cb0-a5e6-f5d3126e4347">
 
 Since weather obviously has an impact on traffic collisions, we decided to remove this crime type from the analysis. 
 
