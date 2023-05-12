@@ -263,7 +263,7 @@ https://docs.google.com/presentation/d/1dLf7HKmSju-rneZXAh5zz0y7BerAy6eE/edit#sl
 * Machine Learning models mock-up - [Model(s) Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/NN_Model)
 * Database          - [Postgress Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/PosgreSQL)
     * [ERD Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/PosgreSQL/ERD_mockup_Segment1.png)
-* Dashboard         - [Dashboard Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/Dashboard_Mockup.pptx)<br>
+* Dashboard         - [Dashboard Mock-up](./Doc_Assets/Dashboard_Mockup.png)<br>
     ![Dashboard mock-up](Doc_Assets/Dashboard_Mockup.png)
  
 
