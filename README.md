@@ -137,13 +137,13 @@ For each Linear Regression model preprocessing of the data was performed.
 
 ### Linear Regression
 Several Linear Regression notebooks were created targeting specific weather events; 
-- Max Temp (maximum temperfature during a given day), 
-- Percipitation (includes rain or snow), 
+- Max Temp (maximum temperature during a given day), 
+- Precipitation (includes rain or snow), 
 - Pressure (average sea level pressure at the reading station), and 
 - Snow on the Ground (snow accumulation).
 
 <b>Precipitation :</b><br>
-Although one might think initially that this would have a high effect on crime, it turned out the be the least of the 4 weather types.  Not surprisingly bicycle theft did have a significant decline as precipitation increased.  However the overall slope was negligable.<br>
+Although one might think initially that this would have a high effect on crime, it turned out the be the least impactful of the 4 weather features.  Not surprisingly bicycle theft did have a significant decline as precipitation increased.  However the overall slope was negligable.<br>
 ![Precipitation Scatter](Doc_Assets/MachineLearning/ml_reg_precipitation.PNG)
 
 <b>Air Pressure :</b><br>
