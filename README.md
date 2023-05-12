@@ -185,5 +185,8 @@ This machine learning analysis can be used to focus the Neural Network tuning to
     * [ERD Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/PosgreSQL/ERD_mockup_Segment1.png)
 * Dashboard         - [Dashboard Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/Dashboard_Mockup.pptx)<br>
     ![Dashboard mock-up](Doc_Assets/Dashboard_Mockup.png)
+ 
+ ### Presentation
+ https://docs.google.com/presentation/d/1dLf7HKmSju-rneZXAh5zz0y7BerAy6eE/edit#slide=id.p1
     
 
