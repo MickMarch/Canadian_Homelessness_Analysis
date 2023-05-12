@@ -25,26 +25,32 @@ Can we predict higher precedence of crime based on weather forecasts?  Provide P
 - Neural Networks, Keras
 - Tableau
 
-### Data Set - Initial Raw Data  (num of rows, size, )
+## Initial Data
 
-#### Source Data
+All raw data used in this project can be found here: [Repository Datasets](./Data/datasets/)
 
-1. **Crime Data** 
+### Source Data
+
+#### Crime Data
+
 The crime data used in this project comes from [The Toronto Police Service Data Catalogue](https://data.torontopolice.on.ca/pages/catalogue).
 
-The data sets are: 
-* Assault_Open_Data.csv
-* Auto_Theft_Open_Data.csv
-* Bicycle_Thefts_Open_Data.csv
-* Break_and_Enter_Open_Data.csv
-* Homicides_Open_Data_ASR_RC_TBL_002.csv
-* Robbery_Open_Data.csv
-* Shooting_and_Firearm_Discharges_Open_Data.csv
-* Theft_From_Motor_Vehicle_Open_Data.csv
-* Theft_Over_Open_Data.csv
-* Traffic_Collisions_(ASR-T-TBL-001).csv
+The crime data sets used: 
 
-This data contained information in which was considered interesting to this project:
+| Type of Crime Data | Row Count |
+-------------------|----------
+| Assault_Open_Data.csv | 173239 |
+| Auto_Theft_Open_Data.csv | 46049 |
+| Bicycle_Thefts_Open_Data.csv | 31971 |
+| Break_and_Enter_Open_Data.csv | 62528 |
+| Homicides_Open_Data_ASR_RC_TBL_002.csv | 1323 |
+| Robbery_Open_Data.csv | 30739 |
+| Shooting_and_Firearm_Discharges_Open_Data.csv | 5708 |
+| Theft_From_Motor_Vehicle_Open_Data.csv | 81652 |
+| Theft_Over_Open_Data.csv | 10746 |
+| Traffic_Collisions_(ASR-T-TBL-001).csv | 553781 |
+
+This data contains information which was considered interesting to this project:
 * EVENT_UNIQUE_ID
 * OCC_DATE (***OCC** = Occurrence*)
 * OCC_YEAR
@@ -59,15 +65,48 @@ This data contained information in which was considered interesting to this proj
 * LONG_WGS84 (*Longitude*)
 * LAT_WGS84 (*Latitude*)
 
-2. **Weather Data:** The weather data used in this project comes from [toronto.weatherstats.com](https://toronto.weatherstats.ca/download.html).
 
-weatherstats.com [quote](https://www.weatherstats.ca/faq/#data-source): *Data is collected over time from Environment and Climate Change Canada and from the Citizen Weather Observer Program (CWOP). Every individual location web site has several links on the "about page" so you can see where the information came from.*
+#### Daily Weather Data
+
+The daily weather data used in this project comes from [toronto.weatherstats.com](https://toronto.weatherstats.ca/download.html).
+
+**weatherstats.com** [quote](https://www.weatherstats.ca/faq/#data-source): *Data is collected over time from Environment and Climate Change Canada and from the Citizen Weather Observer Program (CWOP). Every individual location web site has several links on the "about page" so you can see where the information came from.*
+
+This data contains information which was considered interesting to this project:
+* date
+* max_temperature
+* min_temperature
+* max_relative_humidity
+* avg_relative_humidity
+* avg_pressure_sea
+* max_wind_speed
+* precipitation
+* rain
+* snow
+* snow_on_ground
+* daylight
+* avg_cloud_cover_8
 
 
-### Data Set - Data Cleaning
-* Cleaned Data files can be found here: [cleaned_data_2015_2018](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/cleaned_data_2015_2018)
+## Data Cleaning
 
-### Data Exploration
+### Crime Data
+
+1. The first thing needed was to reduce the columns to the desired data mentioned above in [Crime Data](#crime-data).
+2. The most important thing for the cleanup of the crime data was to convert the `OCC_DAY`, `OCC_MONTH`, and `OCC_YEAR` to a datetime object. 
+3. Then the data was filtered by year. 
+
+### Weather Data
+
+1. The first thing needed was to reduce the columns to the desired data mentioned above in [Weather Data](#weather-data).
+2. Next, all `NaN` values were filled with `0`. This was because the columns which had the `NaN` values were realistic in having days where the value was `0`
+
+![weather_null_values](./Doc_Assets/weather_null_values.png)
+
+3. The `date` column was converted to a datetime object and used to filter by years for the selected range of this project.
+
+
+## Data Exploration
 https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/Project_Notebooks/Data_Exploration
 
 Crime dataset: 
@@ -86,8 +125,7 @@ There are no null values within the dataset except for 1,811 rows (0.38% of the 
 Weather dataset: 
 There are 1,461 rows and 13 columns. This includes the date, max temp, min temp, max humidity, avg humidity, avg sea pressure, max wind speed, precipitation, rain, snow, snow on ground, daylight and avg cloud cover. During this time period, the max temperature in Toronto was 36 degrees and the min temperature was -26.3 degrees. 
 
-### Data Pre-Processing
-
+## Model Exploration
 
 ### Machine Learning 
 Initial investigation into machine learning delivered interesting insights into how different types of weather events effect different types of crime.  
@@ -152,10 +190,52 @@ This machine learning analysis can be used to focus the Neural Network tuning to
 
 ### Neural Network Modelling
 
-### Visualizations 
- https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash?publish=yes
+#### Data Pre-Processing
+
+The steps for pre-processing the data are as follows:
+1. Group the data by date, and form the data into a daily representation of weather and crime stats
+2. From the insights gathered in the [Data Exploration](#data-exploration), the `date` seemed to play a role in a natural increase of crime. This insight led to converting the `date` to a `unix timestamp` for the Neural Network.
+3. `OneHotEncoder()` was used to label encode the `occ_dow`, which is a Monday to Sunday value
+4. `date` and `occ_dow` columns were removed.
+5. Features and Target columns were separated
+
+#### Model
+
+- Using `python` and `tensorflow`, a `keras` `Sequential()` regression model was built that focussed heavily on `RELU` nodes in the hidden layers.
+
+- The Loss function was based on `MSE` (mean squared error)
+
+- The metric being measured was `MAE` (Mean absolute error)
+
+#### Results
+
+The results for each prediction were to compare the `MAE` of the model to the `Mean` and the `STD` of the date being used for the prediction.
+
+##### Assault
+![assault_model_performance](./Doc_Assets/NeuralNetwork/assault_model_performance.png)
+##### Auto Theft
+![assault_model_performance](./Doc_Assets/NeuralNetwork/auto_theft_model_performance.png)
+##### Breaking and Entering
+![b_and_e_model_performance](./Doc_Assets/NeuralNetwork/b_and_e_model_performance.png)
+##### Bicycle Theft
+![bicycle_model_performance](./Doc_Assets/NeuralNetwork/bicycle_model_performance.png)
+##### Homicide
+![homicide_model_performance](./Doc_Assets/NeuralNetwork/homicide_model_performance.png)
+##### Robbery
+![robbery_model_performance](./Doc_Assets/NeuralNetwork/robbery_model_performance.png)
+##### Shooting
+![shooting_model_performance](./Doc_Assets/NeuralNetwork/shooting_model_performance.png)
+##### Theft From Motor Vehicle
+![theft_motor_vehicle_model_performance](./Doc_Assets/NeuralNetwork/theft_motor_vehicle_model_performance.png)
+##### Theft Over
+![theft_over_model_performance](./Doc_Assets/NeuralNetwork/theft_over_model_performance.png)
 
 
+## Visualizations 
+https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash?publish=yes
+
+## Presentation
+https://docs.google.com/presentation/d/1dLf7HKmSju-rneZXAh5zz0y7BerAy6eE/edit#slide=id.p1
 
 
 
@@ -186,7 +266,6 @@ This machine learning analysis can be used to focus the Neural Network tuning to
 * Dashboard         - [Dashboard Mock-up](https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/blob/main/Dashboard_Mockup.pptx)<br>
     ![Dashboard mock-up](Doc_Assets/Dashboard_Mockup.png)
  
- ### Presentation
- https://docs.google.com/presentation/d/1dLf7HKmSju-rneZXAh5zz0y7BerAy6eE/edit#slide=id.p1
+
     
 
