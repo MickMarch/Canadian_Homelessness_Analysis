@@ -146,7 +146,7 @@ Several Linear Regression notebooks were created targeting specific weather even
 
 <b>Precipitation :</b><br>
 Although one might think initially that this would have a high effect on crime, it turned out the be the least of the 4 weather types.  Not surprisingly bicycle theft did have a significant decline as percipitation increased.  However the overall slope was negligable.<br>
-![Precipitation Scatter](Doc_Assets/MachineLearning/ml_reg_precipitation.png)
+![Precipitation Scatter](Doc_Assets/MachineLearning/ml_reg_precipitation.PNG)
 
 <b>Air Pressure :</b><br>
 It has been noted that on many levels changes in air pressure can effect the human body from the sounds we hear to our emotions such as irritability.  A lower air pressure has a consistent relation to an increase in certain types of crime.<br>
@@ -160,7 +160,7 @@ Temperature as well can effect the human condition.  High temperatures had the s
 <b>Snow on the Ground :<b><br>
 While precipitation itself didn't show a significant correlation accumulation of snow on the ground had a higher relationship to certain crimes.   <br>
 
-![Snow accumulation](Doc_Assets/MachineLearning/ml_snow.png)
+![Snow accumulation](Doc_Assets/MachineLearning/ml_snow.PNG)
 
 ### <b>Correlation Matrix </b><br>
 A correlation matrix was run in each of the weather feature Linear Regression notebooks by crime type.  Also a Correlation Matrix was run on groupings of crime types.<br>
