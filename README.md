@@ -36,7 +36,21 @@ Can we predict higher precedence of crime based on weather forecasts?  Provide P
 ### Data Set - Data Cleaning
 
 ### Data Exploration
+https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/Project_Notebooks/Data_Exploration
 
+Crime dataset: 
+The cleaned crime dataset has 480, 903 rows and 12 columns. There are 10 different crime types with traffic collisions comprising 60% of the dataset. 
+![crimetypes](Doc_Assets/crimetypes.png)
+
+Since weather obviously has an impact on traffic collisions, we decided to remove this crime type from the analysis. 
+
+We also see that crime is slightly increasing over time, pointing to a need to figure out how to reduce crime and prevent further increases. 
+![crimeovertime](Doc_Assets/crimeovertime.png)
+
+There are no null values within the dataset except for 1,811 rows (0.38% of the dataset) with no premise type (this is where the crime took place, i.e. an apartment, outside, etc). 
+
+Weather dataset: 
+There are 1,461 rows and 13 columns. This includes the date, max temp, min temp, max humidity, avg humidity, avg sea pressure, max wind speed, precipitation, rain, snow, snow on ground, daylight and avg cloud cover. During this time period, the max temperature in Toronto was 36 degrees and the min temperature was -26.3 degrees. 
 
 ### Data Pre-Processing
 
