@@ -143,7 +143,7 @@ Several Linear Regression notebooks were created targeting specific weather even
 - Snow on the Ground (snow accumulation).
 
 <b>Precipitation :</b><br>
-Although one might think initially that this would have a high effect on crime, it turned out the be the least of the 4 weather types.  Not surprisingly bicycle theft did have a significant decline as percipitation increased.  However the overall slope was negligable.<br>
+Although one might think initially that this would have a high effect on crime, it turned out the be the least of the 4 weather types.  Not surprisingly bicycle theft did have a significant decline as precipitation increased.  However the overall slope was negligable.<br>
 ![Precipitation Scatter](Doc_Assets/MachineLearning/ml_reg_precipitation.PNG)
 
 <b>Air Pressure :</b><br>
