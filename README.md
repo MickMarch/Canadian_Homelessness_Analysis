@@ -59,12 +59,9 @@ This data contained information in which was considered interesting to this proj
 * LONG_WGS84 (*Longitude*)
 * LAT_WGS84 (*Latitude*)
 
-
-
-* **Weather Data:** The weather data used in this project comes from [toronto.weatherstats.com](https://toronto.weatherstats.ca/download.html).
+2. **Weather Data:** The weather data used in this project comes from [toronto.weatherstats.com](https://toronto.weatherstats.ca/download.html).
 
 weatherstats.com [quote](https://www.weatherstats.ca/faq/#data-source): *Data is collected over time from Environment and Climate Change Canada and from the Citizen Weather Observer Program (CWOP). Every individual location web site has several links on the "about page" so you can see where the information came from.*
-
 
 
 ### Data Set - Data Cleaning
