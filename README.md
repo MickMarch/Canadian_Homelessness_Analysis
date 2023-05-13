@@ -173,7 +173,7 @@ These type had a common correlation level between the key weather features.  Thr
 
 ![Major Theft](Doc_Assets/MachineLearning/corr_autoTheft_BandE_robbery.png)
 
-<b>Assault, Homicide and Shoortings:</b><br>
+<b>Assault, Homicide and Shootings:</b><br>
 The correlation matrix shows some correlation to these more serious events with max temperature and assault having the highest correlation.  Homicide however consistently has a lower correlation and regression predictability and with shooting (firearms events)
 
 ![High Temperature](Doc_Assets/MachineLearning/corr_assault_homicide_shooting.png)
