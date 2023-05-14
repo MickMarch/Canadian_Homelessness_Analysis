@@ -230,11 +230,13 @@ The results for each prediction were to compare the `MAE` of the model to the `M
 
 
 ## Visualizations 
-https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash?publish=yes
+https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash
+
+
 
 ## Presentation
-https://docs.google.com/presentation/d/1dLf7HKmSju-rneZXAh5zz0y7BerAy6eE/edit#slide=id.p1
-
+https://docs.google.com/presentation/d/1OP7kVK_U87bTou3uChndK9UwVFvhJjaW/edit#slide=id.g24444635905_0_0
+https://public.tableau.com/app/profile/nitasha.gill/viz/ANALYSISDIFFMODELS/Dash1
 
 
 ## Project Roles and Activities
