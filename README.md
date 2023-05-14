@@ -227,18 +227,23 @@ The values of error were then plotted in a distribution chart.
 ![bicycle_model_performance](./Doc_Assets/NeuralNetwork/bicycle_model_performance.png)
 
 ![bicycle_model_error](./Doc_Assets/NeuralNetwork/Bicycle_Theft_Test_Distribution_of_Error.png)
-##### Homicide
-![homicide_model_performance](./Doc_Assets/NeuralNetwork/homicide_model_performance.png)
 ##### Robbery
 ![robbery_model_performance](./Doc_Assets/NeuralNetwork/robbery_model_performance.png)
 
 ![robbery_model_error](./Doc_Assets/NeuralNetwork/Robbery_Test_Distribution_of_Error.png)
-##### Shooting
-![shooting_model_performance](./Doc_Assets/NeuralNetwork/shooting_model_performance.png)
 ##### Theft From Motor Vehicle
 ![theft_motor_vehicle_model_performance](./Doc_Assets/NeuralNetwork/theft_motor_vehicle_model_performance.png)
 
 ![theft_motor_vehicle_model_error](./Doc_Assets/NeuralNetwork/Theft_From_Motor_Vehicle_Test_Distribution_of_Error.png)
+
+
+#### Removed from Model
+
+This section contains target crimes which were removed from the model predictions for not displaying a significant confidence level in predictability. 
+##### Homicide
+![homicide_model_performance](./Doc_Assets/NeuralNetwork/homicide_model_performance.png)
+##### Shooting
+![shooting_model_performance](./Doc_Assets/NeuralNetwork/shooting_model_performance.png)
 ##### Theft Over
 ![theft_over_model_performance](./Doc_Assets/NeuralNetwork/theft_over_model_performance.png)
 
