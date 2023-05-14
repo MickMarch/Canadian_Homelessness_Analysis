@@ -207,24 +207,43 @@ The steps for pre-processing the data are as follows:
 
 #### Results
 
-The results for each prediction were to compare the `MAE` of the model to the `Mean` and the `STD` of the date being used for the prediction.
+The results for each prediction were to compare the `MAE` of the model to the `Mean` and the `STD` of the date being used for the prediction. 
+The values of error were then plotted in a distribution chart.
 
 ##### Assault
 ![assault_model_performance](./Doc_Assets/NeuralNetwork/assault_model_performance.png)
+
+![assault_model_error](./Doc_Assets/NeuralNetwork/Assault_Test_Distribution_of_Error.png)
+
 ##### Auto Theft
-![assault_model_performance](./Doc_Assets/NeuralNetwork/auto_theft_model_performance.png)
+![auto_theft_model_performance](./Doc_Assets/NeuralNetwork/auto_theft_model_performance.png)
+
+![auto_theft_model_error](./Doc_Assets/NeuralNetwork/Auto_Theft_Test_Distribution_of_Error.png)
 ##### Breaking and Entering
 ![b_and_e_model_performance](./Doc_Assets/NeuralNetwork/b_and_e_model_performance.png)
+
+![b_and_e_model_error](./Doc_Assets/NeuralNetwork/Breaking_and_Entering_Test_Distribution_of_Error.png)
 ##### Bicycle Theft
 ![bicycle_model_performance](./Doc_Assets/NeuralNetwork/bicycle_model_performance.png)
-##### Homicide
-![homicide_model_performance](./Doc_Assets/NeuralNetwork/homicide_model_performance.png)
+
+![bicycle_model_error](./Doc_Assets/NeuralNetwork/Bicycle_Theft_Test_Distribution_of_Error.png)
 ##### Robbery
 ![robbery_model_performance](./Doc_Assets/NeuralNetwork/robbery_model_performance.png)
-##### Shooting
-![shooting_model_performance](./Doc_Assets/NeuralNetwork/shooting_model_performance.png)
+
+![robbery_model_error](./Doc_Assets/NeuralNetwork/Robbery_Test_Distribution_of_Error.png)
 ##### Theft From Motor Vehicle
 ![theft_motor_vehicle_model_performance](./Doc_Assets/NeuralNetwork/theft_motor_vehicle_model_performance.png)
+
+![theft_motor_vehicle_model_error](./Doc_Assets/NeuralNetwork/Theft_From_Motor_Vehicle_Test_Distribution_of_Error.png)
+
+
+#### Removed from Model
+
+This section contains target crimes which were removed from the model predictions for not displaying a significant confidence level in predictability. 
+##### Homicide
+![homicide_model_performance](./Doc_Assets/NeuralNetwork/homicide_model_performance.png)
+##### Shooting
+![shooting_model_performance](./Doc_Assets/NeuralNetwork/shooting_model_performance.png)
 ##### Theft Over
 ![theft_over_model_performance](./Doc_Assets/NeuralNetwork/theft_over_model_performance.png)
 
