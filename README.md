@@ -250,12 +250,11 @@ This section contains target crimes which were removed from the model prediction
 
 ## Visualizations 
 https://public.tableau.com/app/profile/nitasha.gill/viz/Crime_Weather_16836768522530/CrimeDash
-
+https://public.tableau.com/app/profile/nitasha.gill/viz/ANALYSISDIFFMODELS/Dash1
 
 
 ## Presentation
 https://docs.google.com/presentation/d/1OP7kVK_U87bTou3uChndK9UwVFvhJjaW/edit#slide=id.g24444635905_0_0
-https://public.tableau.com/app/profile/nitasha.gill/viz/ANALYSISDIFFMODELS/Dash1
 
 
 ## Project Roles and Activities
