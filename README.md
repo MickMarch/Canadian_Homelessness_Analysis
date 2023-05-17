@@ -146,6 +146,8 @@ The database container 'Weather_Crime' was created in PostgreSQL and then a Pyth
 
 Database configuration details :
 * [Database Schema](./PosgreSQL/Weather_Crime_database_Schema.sql)
+* Database Tables<br>
+    ![Database Tables](./Doc_Assets/PostgreSQL/db_tables.png)
 * [Database PGERD](./PosgreSQL/Weather_Crime_PGERD.pgerd)
 * Database ERD<br>
     ![Database ERD](./PosgreSQL/Weather_Crime_ERD.png)
