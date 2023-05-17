@@ -1,33 +1,38 @@
 # Weather Impact on Crime Rates
-An analysis of Crime Rates in the Greater Toronto Area with regard to the impact weather has on crime rates.
+An analysis of Crime Rates in the Greater Toronto Area with regard to the impact weather has on the rate of crime.
 
 ## Project Overview
 Can weather be used to predict crime rates? Are changing weather patterns affecting crime rates?  
  
-Weather plays a role in our daily lives, it shapes our choices and behaviors affecting when, where and how we choose to carry out our daily activities. Studies into the impact of weather on crime have been going on for decades but what about here and now? Forbes recently published an article “A Different Heatwave Warning: Online Hate—Like Violent Crime—Soars With High Temperatures”.   
+Weather plays a role in our daily lives, it shapes our choices and behaviors affecting when, where and how we choose to carry out our daily activities. Studies into the impact of weather on crime have been going on for decades but what about here and now? Forbes** recently published an article “A Different Heatwave Warning: Online Hate—Like Violent Crime—Soars With High Temperatures”.   
 We are taking a look at Toronto Crime rates from 2015 to 2018 to see if changes in weather have affected crime rates.
 
 ### Project Question
-The purpose of this project is to analyze data to answer the following question:<br>
-***Can changes in weather affect crime rates?***
+The purpose of this project is to analyze data to answer the following question: <br>
+  <b>   Can we use weather to predict the daily rate of crime? </b> 
+
+#### Additional Questions 
+* Do certain types of weather have a greater effect on crime or certain types of crimes?
+* Can this model be used to guide police staffing, budget, and increased surveillance in high crime neighborhoods based on weather forecasts
 
 ### Outcome
-Can we predict higher precedence of crime based on weather forecasts?  Provide Police services an interactive resource that can be used to evaluate the effect of weather on crime trends. Can Police Services use weather to predict higher staffing levels, increased surveillance in high crime areas based on the weather forecast?  If our climate is experiencing changes will these changes affect the long term police services needs and budget?
+Can we predict a higher precedence of crime based on weather forecasts?  The outcome goal is to provide Police services an interactive resource that can be used to evaluate the effect of weather on crime trends. With this model Police Services can use weather to predict higher staffing levels and increased surveillance in high crime areas based on the weather forecast?  If our climate is experiencing changes will these changes affect the long term police services needs and budget?
 
-### Technologies
+## Technologies
 
 - Python
 - Jupyter Notebooks
 - Database (PostgreSQL), SQLAlchemy
-- Machine Learning - Linear Regression model(s)
-- Neural Networks, Keras
+- Machine Learning - Linear Regression model(s), correlation matrix
+- Neural Networks, Keras, Pickle
 - Tableau
+- GitHub Pages
 
 ## Initial Data
 
 All raw data used in this project can be found here: [Repository Datasets](./Data/datasets/)
 
-### Source Data
+### Source Data :
 
 #### Crime Data
 
@@ -107,7 +112,7 @@ This data contains information which was considered interesting to this project:
 ## Data Exploration
 https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/tree/main/Project_Notebooks/Data_Exploration
 
-Crime dataset: 
+<b> Crime dataset: </b><br>
 The cleaned crime dataset has 480, 903 rows and 12 columns. There are 10 different crime types with traffic collisions comprising 60% of the dataset. 
 
 <img width="500" height="400" alt="crimetypes" src="https://github.com/MickMarch/Weather_Impact_On_Crime_Rates/assets/113721712/d1c81908-76a1-4cb0-a5e6-f5d3126e4347">
@@ -120,34 +125,70 @@ We also see that crime is slightly increasing over time, pointing to a need to f
 
 There are no null values within the dataset except for 1,811 rows (0.38% of the dataset) with no premise type (this is where the crime took place, i.e. an apartment, outside, etc). 
 
-Weather dataset: 
+<b>Weather dataset: </b> </br>
 There are 1,461 rows and 13 columns. This includes the date, max temp, min temp, max humidity, avg humidity, avg sea pressure, max wind speed, precipitation, rain, snow, snow on ground, daylight and avg cloud cover. During this time period, the max temperature in Toronto was 36 degrees and the min temperature was -26.3 degrees. 
+<br>
+
+
+## Database
+The database chosen for this project is a PostreSQL database: Weather_Crime 
+
+Cleaned data in the form of csv files were produced as a result of the Data Cleaning activity.  Two csv files: [All Crime Data](./Data/cleaned_data/cleaned_data_2015_2018/all_data_merged_cleaned_2015_2018.csv) and [Weather Data](./Data/cleaned_data/cleaned_data_2015_2018/toronto_daily_weather_2015_2018.csv) were used to populate the database tables.
+
+The database container 'Weather_Crime' was created in PostgreSQL and then a Python notebook was written to create database tables including Primary Key, and Foreign Key relationships.  [Create_Postgres_tables](./PosgreSQL/Create_Postgres_Tables.ipynb)  This file contains:<br>
+* Import of the data files (csv)
+* Creation of the tables (all_crime and weather)<br>
+    ![Table Create](./Doc_Assets/PostgreSQL/Table_create.PNG)<br>
+    ![Primary and Foreign Key config](./Doc_Assets/PostgreSQL/Primary_ForeignKey.PNG)
+* Join of the two tables into one project data table (joined_data)<br>
+    ![Join tables](./Doc_Assets/PostgreSQL/Database_join.PNG)
+
+
+Database configuration details :
+* [Database Schema](./PosgreSQL/Weather_Crime_database_Schema.sql)
+* [Database PGERD](./PosgreSQL/Weather_Crime_PGERD.pgerd)
+* Database ERD<br>
+    ![Database ERD](./PosgreSQL/Weather_Crime_ERD.png)
+
+
+
+<b> Connection from PostgreSQL to Project Notebooks :</b><br>
+A second notebook was created to give guidance on pulling data from Postgres into the project notebooks :
+* [Template_PullDataFromPostgres.ipynb](./PosgreSQL/Template_PullDataFromPostgres.ipynb)
+<br>
+<BR>
+
 
 ## Model Exploration
 
 ### Machine Learning 
-Initial investigation into machine learning delivered interesting insights into how different types of weather events effect different types of crime.  
+Initial investigation into machine learning delivered interesting insights into how different types of weather events effected different types of crime.  
 
 For each Linear Regression model preprocessing of the data was performed.
-* data pulled from PostgreSQL tables; All Crime table and Weather table
-* 'crime' column was grouped by date and day of the week (occ_dow) and split into seperate columns containing the individual crime types, and crime events were totalal by type/date.
-* crime data and weather data was merged into a single data set
+* Data was pulled from PostgreSQL tables; All Crime table and Weather table
+* The 'crime' column was grouped by date and day of the week (occ_dow) and split into separate columns containing the individual crime types and crime events. Crime events totaled by type/date.
+* Crime data and weather data were merged into a single data set<br>
      ![All Data Columns](Doc_Assets/MachineLearning/ml_total_dataset.png)
-* each crime type was isolated and tested against the weather feature focused in the notebook. A scatter diagram, and correlation matrix was built for each crime type
+* Each crime type was isolated and tested against a specific weather feature in each notebook. [Machine Learning Notebooks](./Project_Notebooks/Machine_Learning/)   
+    * A scatter diagram, and correlation matrix was built for each crime type under review in Machine Learning
+        * [Max Temp](./Doc_Assets/MachineLearning/ml_reg_high_temp.PNG)
+        * [Precipitation](./Doc_Assets/MachineLearning/ml_reg_precipiptation.PNG)
+        * [Air Pressure](./Doc_Assets/MachineLearning/ml_reg_pressure.PNG)
+        * [Snow on the Ground](./Doc_Assets/MachineLearning/ml_snow.PNG)
 
 ### Linear Regression
 Several Linear Regression notebooks were created targeting specific weather events; 
-- Max Temp (maximum temperature during a given day), 
-- Precipitation (includes rain or snow), 
-- Pressure (average sea level pressure at the reading station), and 
-- Snow on the Ground (snow accumulation).
+- Max Temp (maximum temperature during a given day) [Notebook](./Project_Notebooks/Machine_Learning/Linear_Regression_MaxTemp.ipynb) 
+- Precipitation (includes rain or snow) [Notebook](./Project_Notebooks/Machine_Learning/Linear_Regression_Precipitation.ipynb) 
+- Air Pressure (average sea level pressure at the reading station) [Notebook](./Project_Notebooks/Machine_Learning/Linear_Regression_Pressure.ipynb)
+- Snow on the Ground (snow accumulation) [Notebook](./Project_Notebooks/Machine_Learning/Linear_Regression_SnowOnGround.ipynb)
 
 <b>Precipitation :</b><br>
-Although one might think initially that this would have a high effect on crime, it turned out the be the least impactful of the 4 weather features.  Not surprisingly bicycle theft did have a significant decline as precipitation increased.  However the overall slope was negligable.<br>
+Although one might think initially that precipitation would have a high effect on crime, it turned out the be the least impactful of the 4 weather features.  Not surprisingly bicycle theft did have a significant decline as precipitation increased.  However the overall slope was negligible.<br>
 ![Precipitation Scatter](Doc_Assets/MachineLearning/ml_reg_precipitation.PNG)
 
 <b>Air Pressure :</b><br>
-It has been noted that on many levels changes in air pressure can effect the human body from the sounds we hear to our emotions such as irritability.  A lower air pressure has a consistent relation to an increase in certain types of crime.<br>
+It has been noted that on many levels changes in air pressure can effect the human body from the sounds we hear to our emotions such as irritability.  A higher air pressure has a consistent relation to an increase in certain types of crime.<br>
 ![Air Pressure](Doc_Assets/MachineLearning/ml_pressure.png)
 
 <b>Higher Temperature :<b><br>
@@ -156,37 +197,37 @@ Temperature as well can effect the human condition.  High temperatures had the s
 ![High Temperature](Doc_Assets/MachineLearning/ml_high_temp.png)
 
 <b>Snow on the Ground :<b><br>
-While precipitation itself didn't show a significant correlation accumulation of snow on the ground had a higher relationship to certain crimes.   <br>
+While precipitation itself didn't show a significant correlation to crime, accumulation of snow on the ground had a higher relationship to certain crime types showing less crime as snow accumulation increased.  <br>
 
 ![Snow accumulation](Doc_Assets/MachineLearning/ml_snow.PNG)
 
 ### <b>Correlation Matrix </b><br>
-A correlation matrix was run in each of the weather feature Linear Regression notebooks by crime type.  Also a Correlation Matrix was run on groupings of crime types.<br>
+A Correlation Matrix was run on groupings of crime types.<br>
 
 <b>Bicycle theft, Theft from a motor vehicle and Theft Over:</b><br>
 A clear picture shows a high correlation between max temperature and bicycle theft confirming that connection.  Also a correlation between max temp and theft from a motor vehicle.
 
-![Correlattion - theft](Doc_Assets/MachineLearning/corr_bicycle_theft.png)
+![Correlation - theft](Doc_Assets/MachineLearning/corr_bicycle_theft.png)
 
-<b>Auto Theft, Brean and Enter, and Robbery:</b><br>
-These type had a common correlation level between the key weather features.  Through the correlation matrix below and regression modelling these had consistenly higher relevance.
+<b>Auto Theft, Break and Enter, and Robbery:</b><br>
+These crime types had a common correlation level with the key weather features.  Through the correlation matrix below and regression modelling these had consistently higher relevance.
 
 ![Major Theft](Doc_Assets/MachineLearning/corr_autoTheft_BandE_robbery.png)
 
 <b>Assault, Homicide and Shootings:</b><br>
-The correlation matrix shows some correlation to these more serious events with max temperature and assault having the highest correlation.  Homicide however consistently has a lower correlation and regression predictability and with shooting (firearms events)
+The correlation matrix shows some correlation to these more serious events with max temperature and assault having the highest correlation.  Homicide however consistently has a lower correlation and regression predictability.
 
 ![High Temperature](Doc_Assets/MachineLearning/corr_assault_homicide_shooting.png)
 
 ### Machine Learning Summary
 Between the Linear Regression and Correlation matrices it was clear that certain types of crime did not have a clear correlation to weather.  Homicide for example was consistently flat in the linear regression and very low in the correlation matrix. 
 
-This machine learning analysis can be used to focus the Neural Network tuning to ensure a cleaner and more effective model.  There were 5 types of crime that were consistently higher in correlation:
-* Thefts: Bicycle Theft, Theft from an Auto, Auto Theft, Robbery, Break and Enter.
+This machine learning analysis can be used to focus the Neural Network tuning to ensure a cleaner and more effective model.  There were 5 types of crime that were consistently higher in correlation. This is reasonable since weather effects mobility within communities, interaction with other people and even our motivations.  Not surprising then that the those crimes with the highest correlation to weather are those enabled by access and could be characterized by crimes of convenience. 
+* Highest correlation all involved Thefts: Bicycle Theft, Theft from an Auto, Auto Theft, Robbery, Break and Enter.
 
 
 
-### Neural Network Modelling
+## Neural Network Modelling
 
 #### Data Pre-Processing
 
@@ -259,19 +300,23 @@ https://docs.google.com/presentation/d/1OP7kVK_U87bTou3uChndK9UwVFvhJjaW/edit#sl
 
 ## Project Roles and Activities
 
-* Focus areas:
+* <b>Focus areas:</b>
     * Data cleaning - Michael 
     * Data base PostgreSQL - Susan
-    * Visualization and data exploration - Nitasha
+    * Data exploration - Nitasha
+    * Machine Learning - Susan
+    * Neural Network Modelling - Michael
+    * Visualizations - Nitasha
   
-* Communication Protocols:
-- branch management
-- additional team meetings (MS Teams)
-- Slack group
-- Task management spreadsheet
-- Each one owns tasks and updates status as task and deliverable are completed
+* <b>Communication Protocols:</b>
+    * branch management
+    * additional team meetings (MS Teams)
+    * Slack group
+    * Task management spreadsheet (Google Drive Spreadsheet)
+        - Each one owns tasks and updates status as task and deliverable are completed
 
 
+** Source: Forbes:  Online Hate—Like Violent Crime—Soars With High Temperatures [Forbes article](https://www.forbes.com/sites/brianbushard/2022/09/07/a-different-heatwave-warning-online-hate-like-violent-crime-soars-with-high-temperatures-study-suggests/?sh=95ed7e85e2f8)
 
 
 ### Segment 1 Deliverables
@@ -286,4 +331,5 @@ https://docs.google.com/presentation/d/1OP7kVK_U87bTou3uChndK9UwVFvhJjaW/edit#sl
  
 
     
+
 
