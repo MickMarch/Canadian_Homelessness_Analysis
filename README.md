@@ -156,8 +156,8 @@ Database configuration details :
 
 <b> Connection from PostgreSQL to Project Notebooks :</b><br>
 A second notebook was created to give guidance on pulling data from Postgres into the project notebooks :
-* [Template_PullDataFromPostgres.ipynb](./PosgreSQL/Template_PullDataFromPostgres.ipynb)
-<br>
+* [Template_PullDataFromPostgres.ipynb](./PosgreSQL/Template_PullDataFromPostgres.ipynb)<br>
+
 
 ## Model Exploration
 
@@ -169,6 +169,7 @@ For each Linear Regression model preprocessing of the data was performed.
 * The 'crime' column was grouped by date and day of the week (occ_dow) and split into separate columns containing the individual crime types and crime events. Crime events totaled by type/date.
 * Crime data and weather data were merged into a single data set<br>
      ![All Data Columns](./Doc_Assets/MachineLearning/ml_total_dataset.png)
+
 * Each crime type was isolated and tested against a specific weather feature in each notebook. [Machine Learning Notebooks](./Project_Notebooks/Machine_Learning/)   
     * A scatter diagram, and correlation matrix was built for each crime type under review in Machine Learning
         * [Max Temp](./Doc_Assets/MachineLearning/ml_reg_high_temp.PNG)
@@ -295,8 +296,8 @@ https://public.tableau.com/app/profile/nitasha.gill/viz/ANALYSISDIFFMODELS/Dash1
 
 
 ## Presentation
-https://docs.google.com/presentation/d/1OP7kVK_U87bTou3uChndK9UwVFvhJjaW/edit#slide=id.g24444635905_0_0
-
+* [Presentation Slides](https://docs.google.com/presentation/d/1OP7kVK_U87bTou3uChndK9UwVFvhJjaW/edit#slide=id.g24444635905_0_0)
+* [Presentation Rehearsal](https://drive.google.com/file/d/11i1cgwvWDJCAdriU72skTFc6JbFAh-CZ/view?usp=share_link)
 
 ## Project Roles and Activities
 
