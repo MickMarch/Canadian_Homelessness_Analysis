@@ -297,8 +297,8 @@ https://public.tableau.com/app/profile/nitasha.gill/viz/ANALYSISDIFFMODELS/Dash1
 
 
 ## Presentation
-https://docs.google.com/presentation/d/1OP7kVK_U87bTou3uChndK9UwVFvhJjaW/edit#slide=id.g24444635905_0_0
-
+* [Presentation Slides](https://docs.google.com/presentation/d/1OP7kVK_U87bTou3uChndK9UwVFvhJjaW/edit#slide=id.g24444635905_0_0)
+* [Presentation Rehearsal](https://drive.google.com/file/d/11i1cgwvWDJCAdriU72skTFc6JbFAh-CZ/view?usp=share_link)
 
 ## Project Roles and Activities
 
