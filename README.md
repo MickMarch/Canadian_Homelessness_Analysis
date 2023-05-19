@@ -170,7 +170,7 @@ For each Linear Regression model preprocessing of the data was performed.
 * Data was pulled from PostgreSQL tables; All Crime table and Weather table
 * The 'crime' column was grouped by date and day of the week (occ_dow) and split into separate columns containing the individual crime types and crime events. Crime events totaled by type/date.
 * Crime data and weather data were merged into a single data set<br>
-     ![All Data Columns](Doc_Assets/MachineLearning/ml_total_dataset.png)
+     ![All Data Columns](Doc_Assets/MachineLearning/ml_total_dataset.PNG)
 * Each crime type was isolated and tested against a specific weather feature in each notebook. [Machine Learning Notebooks](./Project_Notebooks/Machine_Learning/)   
     * A scatter diagram, and correlation matrix was built for each crime type under review in Machine Learning
         * [Max Temp](./Doc_Assets/MachineLearning/ml_reg_high_temp.PNG)
