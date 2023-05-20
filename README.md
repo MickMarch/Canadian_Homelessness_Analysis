@@ -156,9 +156,7 @@ Database configuration details :
 
 <b> Connection from PostgreSQL to Project Notebooks :</b><br>
 A second notebook was created to give guidance on pulling data from Postgres into the project notebooks :
-* [Template_PullDataFromPostgres.ipynb](./PosgreSQL/Template_PullDataFromPostgres.ipynb)
-<br>
-<BR>
+* [Template_PullDataFromPostgres.ipynb](./PosgreSQL/Template_PullDataFromPostgres.ipynb)<br>
 
 
 ## Model Exploration
@@ -170,7 +168,8 @@ For each Linear Regression model preprocessing of the data was performed.
 * Data was pulled from PostgreSQL tables; All Crime table and Weather table
 * The 'crime' column was grouped by date and day of the week (occ_dow) and split into separate columns containing the individual crime types and crime events. Crime events totaled by type/date.
 * Crime data and weather data were merged into a single data set<br>
-     ![All Data Columns](Doc_Assets/MachineLearning/ml_total_dataset.PNG)
+     ![All Data Columns](./Doc_Assets/MachineLearning/ml_total_dataset.png)
+
 * Each crime type was isolated and tested against a specific weather feature in each notebook. [Machine Learning Notebooks](./Project_Notebooks/Machine_Learning/)   
     * A scatter diagram, and correlation matrix was built for each crime type under review in Machine Learning
         * [Max Temp](./Doc_Assets/MachineLearning/ml_reg_high_temp.PNG)
@@ -226,7 +225,7 @@ Between the Linear Regression and Correlation matrices it was clear that certain
 
 This machine learning analysis can be used to focus the Neural Network tuning to ensure a cleaner and more effective model.  There were 5 types of crime that were consistently higher in correlation. This is reasonable since weather effects mobility within communities, interaction with other people and even our motivations.  Not surprising then that the those crimes with the highest correlation to weather are those enabled by access and could be characterized by crimes of convenience. 
 * Highest correlation all involved Thefts: Bicycle Theft, Theft from an Auto, Auto Theft, Robbery, Break and Enter.
-
+<br>
 
 
 ## Neural Network Modelling
